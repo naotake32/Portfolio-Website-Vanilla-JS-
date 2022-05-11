@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+}
+
+.global-container {
+  position: relative;
+}
+
+.container {
+  height: 2000px;
+}
+
+.container.clicked {
+  opacity: 0.5;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 110px;
+  background-color: #c4c4c4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 10;
+}
+
+.header .header-logo {
+  position: relative;
+  display: inline-block;
+  text-align: right;
+  font-size: 24px;
+}
+
+.header .header-logo .logo-text {
+  padding-right: 20px;
+  margin-left: 20px;
+}
+
+.header .header-logo > span {
+  display: block;
+  background-color: black;
+  z-index: 11;
+}
+
+.header .header-logo > span:nth-of-type(1) {
+  position: absolute;
+  left: 10%;
+  top: 85.5%;
+  height: 5px;
+  width: 135px;
+}
+
+.header .header-logo > span:nth-last-of-type(2) {
+  position: absolute;
+  left: 95%;
+  top: 25%;
+  height: 72px;
+  width: 18px;
+  border-radius: 5px;
+}
+
+.header .header-logo > span:nth-of-type(3) {
+  position: absolute;
+  left: 64.9%;
+  top: 32.5%;
+  height: 14.5px;
+  width: 14.5px;
+  border-radius: 50%;
+}
+
+.mobile-menu-btn {
+  border: none;
+  background-color: transparent;
+  margin: 0 30px;
+}
+
+.mobile-menu-btn > span {
+  display: block;
+  background-color: black;
+  height: 10px;
+  width: 60px;
+  margin: 10px 0;
+}
+
+.clicked.mobile-menu {
+  opacity: 1;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.clicked > span:nth-child(1) {
+  -webkit-transform: translateY(20px) rotate(45deg);
+          transform: translateY(20px) rotate(45deg);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.clicked > span:nth-child(2) {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.clicked > span:nth-child(3) {
+  -webkit-transform: translateY(-20px) rotate(135deg);
+          transform: translateY(-20px) rotate(135deg);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 0%;
+  display: block;
+  height: 660px;
+  width: 360px;
+  background-color: #c4c4c4;
+  opacity: 0;
+}
+
+.mobile-menu > p {
+  text-align: center;
+  font-family: serif;
+  font-size: 40px;
+}
+/*# sourceMappingURL=base.css.map */
