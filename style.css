@@ -4,6 +4,7 @@ body {
 
 .global-container {
   position: relative;
+  overflow: hidden;
 }
 
 .container {
@@ -27,28 +28,29 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  z-index: 10;
+  z-index: 15;
 }
 
-.header .header-logo {
+.header > .header-logo {
   position: relative;
   display: inline-block;
   text-align: right;
   font-size: 24px;
 }
 
-.header .header-logo .logo-text {
+.header > .header-logo > .logo-text {
+  padding-top: 45px;
   padding-right: 20px;
   margin-left: 20px;
 }
 
-.header .header-logo > span {
+.header > .header-logo > span {
   display: block;
   background-color: black;
-  z-index: 11;
+  z-index: 10;
 }
 
-.header .header-logo > span:nth-of-type(1) {
+.header > .header-logo > span:nth-of-type(1) {
   position: absolute;
   left: 10%;
   top: 85.5%;
@@ -56,22 +58,90 @@ body {
   width: 135px;
 }
 
-.header .header-logo > span:nth-last-of-type(2) {
+.header > .header-logo > span:nth-last-of-type(2) {
   position: absolute;
   left: 95%;
-  top: 25%;
-  height: 72px;
+  top: 35.5%;
+  height: 60px;
   width: 18px;
   border-radius: 5px;
 }
 
-.header .header-logo > span:nth-of-type(3) {
+.header > .header-logo > span:nth-of-type(3) {
   position: absolute;
   left: 64.9%;
-  top: 32.5%;
+  top: 45.5%;
   height: 14.5px;
   width: 14.5px;
   border-radius: 50%;
+}
+
+.top-page-wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-width: 100%;
+}
+
+.top-page-wrapper .top-img {
+  background-image: url(images/hockeypic_for_mobile.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.top-page-wrapper .top-img::before {
+  display: block;
+  content: '';
+  padding-top: 152%;
+}
+
+.top-page-wrapper > .top-title {
+  text-align: right;
+}
+
+.top-page-wrapper > .top-title p {
+  position: absolute;
+  top: 78%;
+  left: 23%;
+  font-size: 64px;
+}
+
+.top-page-wrapper > .top-title > span {
+  display: block;
+  background-color: black;
+  z-index: 11;
+}
+
+.top-page-wrapper > .top-title > span:nth-of-type(1) {
+  position: absolute;
+  left: 10%;
+  top: 94%;
+  height: 10px;
+  width: 435px;
+  background-color: #c4c4c4;
+}
+
+.top-page-wrapper > .top-title > span:nth-last-of-type(2) {
+  position: absolute;
+  left: 84.8%;
+  top: 77.9%;
+  height: 138px;
+  width: 42px;
+  border-radius: 5px;
+}
+
+.top-page-wrapper > .top-title > span:nth-of-type(3) {
+  position: absolute;
+  left: 62.6%;
+  top: 79.8%;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+}
+
+.section-title {
+  font-size: 60px;
 }
 
 .mobile-menu-btn {
@@ -81,6 +151,7 @@ body {
 }
 
 .mobile-menu-btn > span {
+  content: '';
   display: block;
   background-color: black;
   height: 10px;
@@ -89,6 +160,7 @@ body {
 }
 
 .clicked.mobile-menu {
+  position: fixed;
   opacity: 1;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
@@ -120,12 +192,21 @@ body {
   top: 0%;
   display: block;
   height: 660px;
-  width: 360px;
+  width: 70%;
   background-color: #c4c4c4;
   opacity: 0;
 }
 
-.mobile-menu > p {
+.mobile-menu .menu-text-wrapper {
+  padding-top: 90px;
+}
+
+.mobile-menu .menu-text-wrapper > :nth-child(1) {
+  margin: none;
+}
+
+.mobile-menu .menu-text-wrapper > p {
+  margin-bottom: 70px;
   text-align: center;
   font-family: serif;
   font-size: 40px;

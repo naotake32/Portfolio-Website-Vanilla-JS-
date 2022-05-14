@@ -4,10 +4,12 @@ body {
 
 .global-container {
     position: relative;
+    overflow: hidden;
 }
 
 .container {
     height: 2000px;
+    
 
     &.clicked {
         opacity: 0.5;
@@ -23,9 +25,9 @@ height: 110px;
 background-color: #c4c4c4;
 display: flex;
 justify-content: space-between;
-z-index: 10;
+z-index: 15;
 
-    & .header-logo {
+    & > .header-logo {
         position: relative;
         display: inline-block;
         text-align: right;
@@ -33,7 +35,8 @@ z-index: 10;
         
 
         
-        & .logo-text {
+        & > .logo-text {
+            padding-top: 45px;
             padding-right: 20px;
             margin-left: 20px;
         }
@@ -41,7 +44,7 @@ z-index: 10;
         & > span {
             display: block;
             background-color: black;
-            z-index: 11;
+            z-index: 10;
 
 
             &:nth-of-type(1) {
@@ -55,8 +58,8 @@ z-index: 10;
             &:nth-last-of-type(2) {
                 position: absolute;
                 left: 95%;
-                top: 25%;
-                height: 72px;
+                top: 35.5%;
+                height: 60px;
                 width: 18px;
                 border-radius: 5px;
             }
@@ -64,7 +67,7 @@ z-index: 10;
             &:nth-of-type(3) {
                 position: absolute;
                 left: 64.9%;
-                top: 32.5%;
+                top: 45.5%;
                 height: 14.5px;
                 width: 14.5px;
                 border-radius: 50%;
@@ -74,6 +77,78 @@ z-index: 10;
     }
 }
 
+
+
+.top-page-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-width: 100%;
+
+    & .top-img {
+        background-image: url(images/hockeypic_for_mobile.png);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        
+
+        &::before {
+            display: block;
+            content: '';
+            padding-top: 152%;
+        }
+    }
+
+    & > .top-title{
+        text-align: right;
+        &  p {
+            position: absolute;
+            top: 78%;
+            left: 23%;
+            font-size: 64px;
+        }
+
+        & > span {
+            display: block;
+            background-color: black;
+            z-index: 11;
+
+            &:nth-of-type(1) {
+                position: absolute;
+                left: 10%;
+                top: 94%;
+                height: 10px;
+                width: 435px;
+                background-color: #c4c4c4;
+            }
+            
+            &:nth-last-of-type(2) {
+                position: absolute;
+                left: 84.8%;
+                top: 77.9%;
+                height: 138px;
+                width: 42px;
+                border-radius: 5px;
+            }
+
+            &:nth-of-type(3) {
+                position: absolute;
+                left: 62.6%;
+                top: 79.8%;
+                height: 38px;
+                width: 38px;
+                border-radius: 50%;
+            } 
+        }
+    }
+}
+
+.section-title {
+    font-size: 60px;
+
+
+}
+
 .mobile-menu-btn {
     border: none;
     background-color: transparent;
@@ -81,6 +156,7 @@ z-index: 10;
 
 
      & > span {
+    content: '';
     display: block;
     background-color: black;
     height: 10px;
@@ -92,6 +168,7 @@ z-index: 10;
 .clicked {
 
     &.mobile-menu {
+        position: fixed;
         opacity: 1;
         transition-duration: 1s;
     }
@@ -121,13 +198,21 @@ z-index: 10;
     top: 0%;
     display: block;
     height: 660px;
-    width: 360px;
+    width: 70%;
     background-color: #c4c4c4;
     opacity: 0;
 
+    & .menu-text-wrapper {
+        padding-top: 90px;
+
+    & > :nth-child(1) {
+        margin: none;
+    }
     & > p {
+        margin-bottom: 70px;
         text-align: center;
         font-family: serif;
         font-size: 40px;
     }
+}
 } 
