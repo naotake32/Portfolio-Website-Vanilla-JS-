@@ -84,7 +84,6 @@ z-index: 15;
     display: block;
     width: 100%;
     min-width: 100%;
-
     & .top-img {
         background-image: url(images/hockeypic_for_mobile.png);
         background-position: center;
@@ -143,11 +142,76 @@ z-index: 15;
     }
 }
 
-.section-title {
-    font-size: 60px;
+div[class*="section-title"]{
+    position: relative;
+    flex-direction: column;
+    height: 120px;
 
+        &  h1 {
+            position: absolute;
+            right: 20%;
+            font-size: 64px;
+            text-align: right;
+            font-family: 'Roboto';
+            margin-top: 50px;
+        }
 
+        & > span {
+            display: block;
+            background-color: black;
+            z-index: 11;
+
+            &:nth-of-type(1) {
+                position: absolute;
+                right: 10%;
+                top: 103%;
+                height: 10px;
+                width: 320px;
+                background-color: #c4c4c4;
+            }
+            
+            &:nth-last-of-type(2) {
+                position: absolute;
+                right: 10%;
+                top: 15%;
+                height: 115px;
+                width: 42px;
+                border-radius: 5px;
+            }
+    
+            &:nth-of-type(3) {
+                height: 38px;
+                width: 38px;
+                border-radius: 50%;
+
+                &[id*="aboutme"] {
+                    position: absolute;
+                    right: 264.3px;
+                    top: 57.8%;
+                }
+
+                &[id*="history"] {
+                    position: absolute;
+                    right: 157.3px;
+                    top: 57.8%;
+                }
+
+                &[id*="works"] {
+                    position: absolute;
+                    right: 190.3px;
+                    top: 57.8%;
+                }
+
+                &[id*="contact"] {
+                    position: absolute;
+                    right: 247.3px;
+                    top: 57.8%;
+                }
+            }
+
+        }
 }
+
 
 .mobile-menu-btn {
     border: none;
