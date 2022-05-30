@@ -4,14 +4,34 @@ body {
 
 .global-container {
   position: relative;
-  overflow: hidden;
+  max-width: 100%;
 }
 
 .container {
   height: 2000px;
 }
 
-.container.clicked {
+.container .aboutme {
+  height: 700px;
+  width: 100%;
+}
+
+.container .history {
+  height: 800px;
+  width: 100%;
+}
+
+.container .works {
+  height: 1400px;
+  width: 100%;
+}
+
+.container .contact {
+  height: 1070px;
+  width: 100%;
+}
+
+.container .clicked {
   opacity: 0.5;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
@@ -147,6 +167,7 @@ div[class*="section-title"] {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 120px;
+  margin-top: 40px;
 }
 
 div[class*="section-title"] h1 {
@@ -159,7 +180,7 @@ div[class*="section-title"] h1 {
 }
 
 div[class*="section-title"] > span {
-  display: block;
+  display: inline-block;
   background-color: black;
   z-index: 11;
 }
@@ -212,6 +233,257 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   top: 57.8%;
 }
 
+.aboutme .aboutme-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aboutme .aboutme-content-wrapper > .mypic {
+  width: 162px;
+  height: 320px;
+  border-radius: 160px;
+  margin-top: 100px;
+  padding-left: 25px;
+}
+
+.aboutme .aboutme-content-wrapper > .aboutme-text {
+  text-align: right;
+  display: inline-block;
+  width: 100%;
+  margin: 20px 30px 0 30px;
+}
+
+.aboutme .aboutme-content-wrapper > .aboutme-text > p {
+  margin: 47px 0 47px 0;
+  line-height: 25px;
+}
+
+.history .history-headline {
+  position: relative;
+  margin-left: 25px;
+  margin-top: 60px;
+}
+
+.history .history-headline > h2 {
+  padding-left: 30px;
+  font-family: Roboto;
+  font-size: 32px;
+}
+
+.history .history-headline > span {
+  display: inline-block;
+  z-index: 11;
+}
+
+.history .history-headline > span:nth-of-type(1) {
+  position: absolute;
+  background-color: black;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  left: 1.5%;
+  top: 30%;
+}
+
+.history .history-headline > span:nth-of-type(2) {
+  position: absolute;
+  background-color: #c4c4c4;
+  height: 2px;
+  width: 200px;
+}
+
+.history .history-text > p {
+  font-size: 20px;
+  margin-top: 80px;
+  line-height: 25px;
+}
+
+.history .history-text > p:nth-child(1) {
+  padding-left: 35px;
+  padding-right: 127px;
+}
+
+.history .history-text > p:nth-child(2) {
+  padding-left: 127px;
+  padding-right: 36px;
+}
+
+.history .history-text > p:nth-child(3) {
+  margin-bottom: 80px;
+  padding-left: 35px;
+  padding-right: 127px;
+}
+
+.works ul {
+  margin: 116px 0;
+  width: 100%;
+}
+
+.works ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.works ul li > .text {
+  font-size: 32px;
+  font-family: serif;
+}
+
+.works ul li > .photo {
+  margin: 0 50px;
+}
+
+.works ul li .photo, .works ul li text {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.works ul li:nth-child(odd) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  padding-right: 60px;
+}
+
+.works ul li:nth-child(even) {
+  padding-left: 60px;
+}
+
+.works ul li:nth-child(2) {
+  margin-top: 107px;
+}
+
+.works ul li:nth-child(3) {
+  margin-top: 107px;
+}
+
+.works .skillsets-wrapper {
+  font-family: Roboto;
+  font-size: 48px;
+  text-align: center;
+}
+
+.works .skill-icons-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 64px 0;
+}
+
+.works .skill-icons-wrapper .works-icons {
+  display: inline-block;
+  width: 102px;
+  height: 102px;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 26px;
+  font-family: Roboto;
+}
+
+.contact .contact-info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 85px 0 73px 0;
+  padding-left: 14%;
+}
+
+.contact .contact-info-wrapper > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contact-info-wrapper > li .contact-icon {
+  margin-right: 12px;
+}
+
+.contact .contact-info-wrapper > li p {
+  font-size: 32px;
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+.contact .contact-info-wrapper > li .contact-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.contact .contact-form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  margin-top: 73px;
+  padding-left: 20%;
+}
+
+.contact .contact-form-wrapper p {
+  font-family: serif;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.contact .contact-form-wrapper input {
+  width: 200px;
+  background-color: #c4c4c4;
+  border: none;
+}
+
+.contact .contact-form-wrapper textarea {
+  background-color: #c4c4c4;
+  width: 277px;
+  height: 288px;
+  resize: none;
+  border: none;
+}
+
+.contact .contact-form-wrapper button {
+  background-color: black;
+  color: white;
+  font-family: serif;
+  width: 100px;
+  height: 37px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
 .mobile-menu-btn {
   border: none;
   background-color: transparent;
@@ -225,6 +497,10 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   height: 10px;
   width: 60px;
   margin: 10px 0;
+}
+
+.clicked {
+  z-index: 20;
 }
 
 .clicked.mobile-menu {
