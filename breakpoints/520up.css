@@ -12,6 +12,10 @@ body {
   height: auto;
 }
 
+.container {
+  min-width: 100%;
+}
+
 .container .aboutme {
   height: auto;
   width: 100%;
@@ -41,7 +45,7 @@ body {
 .header {
   position: fixed;
   width: 100%;
-  height: 11rem;
+  height: 110px;
   background-color: #c4c4c4;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,7 +60,7 @@ body {
   position: relative;
   display: inline-block;
   text-align: right;
-  font-size: 2.4rem;
+  font-size: 24px;
 }
 
 .header > .header-logo:hover {
@@ -65,9 +69,9 @@ body {
 }
 
 .header > .header-logo > .logo-text {
-  padding-top: 4.5rem;
-  padding-right: 2rem;
-  margin-left: 2rem;
+  padding-top: 45px;
+  padding-right: 20px;
+  margin-left: 20px;
 }
 
 .header > .header-logo > span {
@@ -80,25 +84,25 @@ body {
   position: absolute;
   left: 10%;
   top: 85.5%;
-  height: 0.5rem;
-  width: 13.5rem;
+  height: 5px;
+  width: 135px;
 }
 
 .header > .header-logo > span:nth-last-of-type(2) {
   position: absolute;
   left: 95%;
   top: 35.5%;
-  height: 6rem;
-  width: 1.8rem;
-  border-radius: 0.4rem;
+  height: 60px;
+  width: 18px;
+  border-radius: 5px;
 }
 
 .header > .header-logo > span:nth-of-type(3) {
   position: absolute;
   left: 64.9%;
   top: 45.5%;
-  height: 1.45rem;
-  width: 1.45rem;
+  height: 14.5px;
+  width: 14.5px;
   border-radius: 50%;
 }
 
@@ -108,12 +112,14 @@ body {
 
 .main {
   height: auto;
-  width: 100%;
+  min-width: 100%;
 }
 
 .top-page-wrapper {
+  position: relative;
   display: block;
   width: 100%;
+  min-width: 100%;
   height: auto;
 }
 
@@ -132,16 +138,13 @@ body {
 
 .top-page-wrapper > .top-title {
   text-align: right;
-  width: 100px;
-  height: 50px;
-  margin: 0 0 0 auto;
 }
 
 .top-page-wrapper > .top-title p {
   position: absolute;
   top: 78%;
   left: 23%;
-  font-size: 4.8rem;
+  font-size: 6.4rem;
 }
 
 .top-page-wrapper > .top-title > span {
@@ -154,8 +157,8 @@ body {
   position: absolute;
   left: 9%;
   top: 94%;
-  height: 0.6rem;
-  width: 25rem;
+  height: 1rem;
+  width: 43.5rem;
   background-color: #c4c4c4;
 }
 
@@ -163,17 +166,17 @@ body {
   position: absolute;
   left: 84.8%;
   top: 77.9%;
-  height: 10.4rem;
-  width: 3.6rem;
-  border-radius: 0.5rem;
+  height: 13.8rem;
+  width: 4.2rem;
+  border-radius: 5px;
 }
 
 .top-page-wrapper > .top-title > span:nth-of-type(3) {
   position: absolute;
   left: 62.6%;
   top: 79.8%;
-  height: 3rem;
-  width: 3rem;
+  height: 3.8rem;
+  width: 3.8rem;
   border-radius: 50%;
 }
 
@@ -190,7 +193,7 @@ div[class*="section-title"] {
 div[class*="section-title"] h1 {
   position: absolute;
   right: 20%;
-  font-size: 5.2rem;
+  font-size: 6.4rem;
   text-align: right;
   font-family: 'Roboto';
   margin-top: 50px;
@@ -204,49 +207,49 @@ div[class*="section-title"] > span {
 
 div[class*="section-title"] > span:nth-of-type(1) {
   position: absolute;
-  right: 16%;
-  height: 0.7rem;
-  width: 25rem;
+  right: 11%;
+  top: 102.5%;
+  height: 1rem;
+  width: 32rem;
   background-color: #c4c4c4;
-  top: 86%;
 }
 
 div[class*="section-title"] > span:nth-last-of-type(2) {
   position: absolute;
   right: 10%;
-  top: 33.5%;
-  height: 7rem;
-  width: 3rem;
+  top: 15%;
+  height: 11.5rem;
+  width: 4.2rem;
   border-radius: 0.5rem;
 }
 
 div[class*="section-title"] > span:nth-of-type(3) {
-  height: 3rem;
-  width: 3rem;
+  height: 3.8rem;
+  width: 3.8rem;
   border-radius: 50%;
 }
 
 div[class*="section-title"] > span:nth-of-type(3)[id*="aboutme"] {
   position: absolute;
-  right: 26.43rem;
+  right: 264.3px;
   top: 57.8%;
 }
 
 div[class*="section-title"] > span:nth-of-type(3)[id*="history"] {
   position: absolute;
-  right: 15.73rem;
+  right: 157.3px;
   top: 57.8%;
 }
 
 div[class*="section-title"] > span:nth-of-type(3)[id*="works"] {
   position: absolute;
-  right: 19.03rem;
+  right: 190.3px;
   top: 57.8%;
 }
 
 div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   position: absolute;
-  right: 24.73rem;
+  right: 247.3px;
   top: 57.8%;
 }
 
@@ -254,45 +257,45 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .aboutme .aboutme-content-wrapper > .mypic {
-  width: 75%;
-  height: auto;
-  border-radius: 6rem;
-  margin-top: 10rem;
+  width: 162px;
+  height: 320px;
+  border-radius: 160px;
+  margin-top: 100px;
+  padding-left: 25px;
 }
 
 .aboutme .aboutme-content-wrapper > .aboutme-text {
-  text-align: center;
+  text-align: right;
   display: inline-block;
   width: 100%;
-  margin: 2rem 3rem 0 3rem;
+  margin: 20px 30px 0 30px;
 }
 
 .aboutme .aboutme-content-wrapper > .aboutme-text > p {
-  font-size: 1.5rem;
-  line-height: 2.5rem;
-  margin: 4.7rem 0 4.7rem 0;
-  line-height: 2.5rem;
+  margin: 47px 0 47px 0;
+  line-height: 25px;
 }
 
 .history .history-headline {
   position: relative;
-  margin-left: 2.5rem;
-  margin-top: 7.2rem;
+  margin-left: 25px;
+  margin-top: 60px;
 }
 
 .history .history-headline > h2 {
+  padding-left: 30px;
   font-family: Roboto;
-  font-size: 3.2rem;
+  font-size: 32px;
 }
 
 .history .history-headline > span {
@@ -303,8 +306,8 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
 .history .history-headline > span:nth-of-type(1) {
   position: absolute;
   background-color: black;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   left: 1.5%;
   top: 30%;
@@ -313,27 +316,27 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
 .history .history-headline > span:nth-of-type(2) {
   position: absolute;
   background-color: #c4c4c4;
-  height: 0.2rem;
-  width: 20rem;
-}
-
-.history .history-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 2px;
+  width: 200px;
 }
 
 .history .history-text > p {
-  font-size: 1.6rem;
-  margin: 4rem 2rem;
-  line-height: 2.5rem;
+  font-size: 20px;
+  margin-top: 80px;
+  line-height: 25px;
+}
+
+.history .history-text > p:nth-child(1) {
+  margin-right: 75px;
+}
+
+.history .history-text > p:nth-child(2) {
+  margin-left: 75px;
+}
+
+.history .history-text > p:nth-child(3) {
+  margin-bottom: 80px;
+  margin-right: 75px;
 }
 
 .works .github-info {
@@ -366,7 +369,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
 }
 
 .works ul {
-  margin: 11.6rem 0;
+  margin: 116px 0;
   width: 100%;
 }
 
@@ -377,20 +380,11 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .works ul li > .text {
-  font-size: 1.6rem;
+  font-size: 32px;
   font-family: serif;
-  margin-bottom: 1rem;
-}
-
-.works ul li > .text > br {
-  display: none;
 }
 
 .works ul li > .text:hover {
@@ -399,18 +393,37 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
 }
 
 .works ul li > .photo {
-  margin-bottom: 3rem;
+  margin: 0 50px;
 }
 
 .works ul li .photo, .works ul li text {
-  width: 90%;
+  width: 50%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
+.works ul li:nth-child(odd) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.works ul li:nth-child(even) {
+  padding-left: 60px;
+}
+
+.works ul li:nth-child(2) {
+  margin-top: 107px;
+}
+
+.works ul li:nth-child(3) {
+  margin-top: 107px;
+}
+
 .works .skillsets-wrapper {
   font-family: Roboto;
-  font-size: 4.8rem;
+  font-size: 48px;
   text-align: center;
 }
 
@@ -421,20 +434,18 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   text-align: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 6.4rem 0;
+  margin: 64px 0;
 }
 
 .works .skill-icons-wrapper .works-icons {
   display: inline-block;
-  width: 7.5rem;
-  height: 7.5rem;
+  width: 102px;
+  height: 102px;
 }
 
 .contact h2 {
   text-align: center;
-  font-size: 2.6rem;
+  font-size: 26px;
   font-family: Roboto;
 }
 
@@ -449,9 +460,8 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 8.5rem;
-  margin-bottom: 7.3rem;
-  margin-left: 7.5%;
+  margin: 85px 0 73px 0;
+  padding-left: 14%;
 }
 
 .contact .contact-info-wrapper > li {
@@ -464,11 +474,11 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
 }
 
 .contact .contact-info-wrapper > li .contact-icon {
-  margin-right: 1.2rem;
+  margin-right: 12px;
 }
 
 .contact .contact-info-wrapper > li .contactinfo-text {
-  font-size: 2.2rem;
+  font-size: 32px;
   font-family: Roboto;
   font-weight: 300;
 }
@@ -479,8 +489,8 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
 }
 
 .contact .contact-info-wrapper > li .contact-icon {
-  width: 3rem;
-  height: 3rem;
+  width: 40px;
+  height: 40px;
 }
 
 .contact .contact-form-wrapper {
@@ -494,26 +504,26 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
-  margin-top: 7.3rem;
-  margin-left: 6.5%;
+  margin-top: 73px;
+  margin-left: 23.5%;
 }
 
 .contact .contact-form-wrapper p {
   font-family: serif;
-  font-size: 1.6rem;
-  margin-bottom: 1.5rem;
+  font-size: 16px;
+  margin-bottom: 15px;
 }
 
 .contact .contact-form-wrapper input {
-  width: 20rem;
+  width: 200px;
   background-color: #c4c4c4;
   border: none;
 }
 
 .contact .contact-form-wrapper textarea {
   background-color: #c4c4c4;
-  width: 27.7rem;
-  height: 28.8rem;
+  width: 277px;
+  height: 288px;
   resize: none;
   border: none;
 }
@@ -522,12 +532,12 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   background-color: black;
   color: white;
   font-family: serif;
-  width: 10rem;
-  height: 3.7rem;
+  width: 100px;
+  height: 37px;
   border: none;
-  border-radius: 0.5rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .contact .contact-form-wrapper button:hover {
@@ -538,7 +548,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
 .mobile-menu-btn {
   border: none;
   background-color: transparent;
-  margin: 0 3rem;
+  margin: 0 30px;
 }
 
 .mobile-menu-btn:hover {
@@ -549,9 +559,9 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   content: '';
   display: block;
   background-color: black;
-  height: 1rem;
-  width: 6rem;
-  margin: 1rem 0;
+  height: 10px;
+  width: 60px;
+  margin: 10px 0;
 }
 
 .clicked {
@@ -590,10 +600,14 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   position: absolute;
   top: 0%;
   display: block;
-  height: 66rem;
+  height: 660px;
   width: 70%;
   background-color: #c4c4c4;
   opacity: 0;
+}
+
+.mobile-menu .menu-text-wrapper {
+  padding-top: 90px;
 }
 
 .mobile-menu .menu-text-wrapper > :nth-child(1) {
@@ -601,14 +615,14 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
 }
 
 .mobile-menu .menu-text-wrapper > p {
-  margin-bottom: 7rem;
+  margin-bottom: 70px;
   text-align: center;
   font-family: serif;
-  font-size: 4rem;
+  font-size: 40px;
 }
 
 .mobile-menu .menu-text-wrapper > p:hover {
   opacity: 0.7;
   cursor: pointer;
 }
-/*# sourceMappingURL=base.css.map */
+/*# sourceMappingURL=520up.css.map */
