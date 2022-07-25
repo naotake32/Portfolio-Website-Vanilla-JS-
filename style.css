@@ -115,6 +115,7 @@ body {
   display: block;
   width: 100%;
   height: auto;
+  position: relative;
 }
 
 .top-page-wrapper .top-img {
@@ -132,15 +133,21 @@ body {
 
 .top-page-wrapper > .top-title {
   text-align: right;
-  width: 100px;
+  width: 330px;
   height: 50px;
   margin: 0 0 0 auto;
+  position: absolute;
+  top: 66.8%;
+  right: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .top-page-wrapper > .top-title p {
   position: absolute;
-  top: 78%;
-  left: 23%;
+  top: 100%;
+  left: 13%;
   font-size: 4.8rem;
 }
 
@@ -152,8 +159,8 @@ body {
 
 .top-page-wrapper > .top-title > span:nth-of-type(1) {
   position: absolute;
-  left: 9%;
-  top: 94%;
+  right: 17%;
+  top: 290%;
   height: 0.6rem;
   width: 25rem;
   background-color: #c4c4c4;
@@ -161,8 +168,8 @@ body {
 
 .top-page-wrapper > .top-title > span:nth-last-of-type(2) {
   position: absolute;
-  left: 84.8%;
-  top: 77.9%;
+  right: 7%;
+  top: 94%;
   height: 10.4rem;
   width: 3.6rem;
   border-radius: 0.5rem;
@@ -170,15 +177,20 @@ body {
 
 .top-page-wrapper > .top-title > span:nth-of-type(3) {
   position: absolute;
-  left: 62.6%;
-  top: 79.8%;
+  right: 8%;
+  top: 99.8%;
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
 }
 
 div[class*="section-title"] {
-  position: relative;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  height: 50px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -250,6 +262,10 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   top: 57.8%;
 }
 
+.aboutme {
+  position: relative;
+}
+
 .aboutme .aboutme-content-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -282,6 +298,10 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   line-height: 2.5rem;
   margin: 4.7rem 0 4.7rem 0;
   line-height: 2.5rem;
+}
+
+.history {
+  position: relative;
 }
 
 .history .history-headline {
@@ -334,6 +354,10 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   font-size: 1.6rem;
   margin: 4rem 2rem;
   line-height: 2.5rem;
+}
+
+.works {
+  position: relative;
 }
 
 .works .github-info {
@@ -430,6 +454,10 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   display: inline-block;
   width: 7.5rem;
   height: 7.5rem;
+}
+
+.contact {
+  position: relative;
 }
 
 .contact h2 {
@@ -612,7 +640,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   cursor: pointer;
 }
 
-@media (min-width: 429px) {
+@media (min-width: 429px) and (max-width: 519px) {
   html {
     font-size: 62.5%;
   }
@@ -731,11 +759,12 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   }
   .top-page-wrapper > .top-title {
     text-align: right;
+    top: 74.8%;
+    right: 14%;
   }
   .top-page-wrapper > .top-title p {
     position: absolute;
-    top: 72%;
-    left: 14%;
+    top: 67%;
     font-size: 6.0rem;
   }
   .top-page-wrapper > .top-title > span {
@@ -745,24 +774,24 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   }
   .top-page-wrapper > .top-title > span:nth-of-type(1) {
     position: absolute;
-    left: 9%;
-    top: 89%;
+    left: 7%;
+    top: 299%;
     height: 1rem;
     width: 34.5rem;
     background-color: #c4c4c4;
   }
   .top-page-wrapper > .top-title > span:nth-last-of-type(2) {
     position: absolute;
-    left: 81.8%;
-    top: 70.8%;
+    left: 100.8%;
+    top: 42.8%;
     height: 13.8rem;
     width: 4.2rem;
     border-radius: 5px;
   }
   .top-page-wrapper > .top-title > span:nth-of-type(3) {
     position: absolute;
-    left: 59.3%;
-    top: 73.8%;
+    left: 101.6%;
+    top: 94.8%;
     height: 3.8rem;
     width: 3.8rem;
     border-radius: 50%;
@@ -1144,7 +1173,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   }
 }
 
-@media (min-width: 520px) {
+@media (min-width: 520px) and (max-width: 619px) {
   html {
     font-size: 62.5%;
   }
@@ -1263,11 +1292,14 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   }
   .top-page-wrapper > .top-title {
     text-align: right;
+    position: absolute;
+    top: 75%;
+    right: 34%;
   }
   .top-page-wrapper > .top-title p {
     position: absolute;
-    top: 78%;
-    left: 23%;
+    top: 51%;
+    left: 39%;
     font-size: 6.4rem;
   }
   .top-page-wrapper > .top-title > span {
@@ -1277,24 +1309,24 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   }
   .top-page-wrapper > .top-title > span:nth-of-type(1) {
     position: absolute;
-    left: 9%;
-    top: 94%;
+    left: 27%;
+    top: 299%;
     height: 1rem;
-    width: 43.5rem;
+    width: 36.5rem;
     background-color: #c4c4c4;
   }
   .top-page-wrapper > .top-title > span:nth-last-of-type(2) {
     position: absolute;
-    left: 84.8%;
-    top: 77.9%;
+    left: 132.8%;
+    top: 42.9%;
     height: 13.8rem;
     width: 4.2rem;
     border-radius: 5px;
   }
   .top-page-wrapper > .top-title > span:nth-of-type(3) {
     position: absolute;
-    left: 62.6%;
-    top: 79.8%;
+    left: 133.5%;
+    top: 82.5%;
     height: 3.8rem;
     width: 3.8rem;
     border-radius: 50%;
@@ -1681,7 +1713,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   }
 }
 
-@media (min-width: 620px) {
+@media (min-width: 620px) and (max-width: 719px) {
   html {
     font-size: 62.5%;
   }
@@ -1800,11 +1832,14 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   }
   .top-page-wrapper > .top-title {
     text-align: right;
+    position: absolute;
+    top: 75%;
+    right: 34%;
   }
   .top-page-wrapper > .top-title p {
     position: absolute;
-    top: 78%;
-    left: 23%;
+    top: 51%;
+    left: 39%;
     font-size: 6.4rem;
   }
   .top-page-wrapper > .top-title > span {
@@ -1814,24 +1849,24 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   }
   .top-page-wrapper > .top-title > span:nth-of-type(1) {
     position: absolute;
-    left: 9%;
-    top: 94%;
+    left: 27%;
+    top: 299%;
     height: 1rem;
-    width: 43.5rem;
+    width: 36.5rem;
     background-color: #c4c4c4;
   }
   .top-page-wrapper > .top-title > span:nth-last-of-type(2) {
     position: absolute;
-    left: 84.8%;
-    top: 77.9%;
+    left: 132.8%;
+    top: 42.9%;
     height: 13.8rem;
     width: 4.2rem;
     border-radius: 5px;
   }
   .top-page-wrapper > .top-title > span:nth-of-type(3) {
     position: absolute;
-    left: 62.6%;
-    top: 79.8%;
+    left: 133.5%;
+    top: 82.5%;
     height: 3.8rem;
     width: 3.8rem;
     border-radius: 50%;
@@ -2217,7 +2252,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   }
 }
 
-@media (min-width: 720px) {
+@media (min-width: 720px) and (max-width: 859px) {
   html {
     font-size: 62.5%;
   }
@@ -2336,11 +2371,14 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   }
   .top-page-wrapper > .top-title {
     text-align: right;
+    position: absolute;
+    top: 75%;
+    right: 34%;
   }
   .top-page-wrapper > .top-title p {
     position: absolute;
-    top: 78%;
-    left: 23%;
+    top: 51%;
+    left: 39%;
     font-size: 6.4rem;
   }
   .top-page-wrapper > .top-title > span {
@@ -2350,24 +2388,24 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   }
   .top-page-wrapper > .top-title > span:nth-of-type(1) {
     position: absolute;
-    left: 9%;
-    top: 94%;
+    left: 27%;
+    top: 299%;
     height: 1rem;
-    width: 43.5rem;
+    width: 36.5rem;
     background-color: #c4c4c4;
   }
   .top-page-wrapper > .top-title > span:nth-last-of-type(2) {
     position: absolute;
-    left: 84.8%;
-    top: 77.9%;
+    left: 132.8%;
+    top: 42.9%;
     height: 13.8rem;
     width: 4.2rem;
     border-radius: 5px;
   }
   .top-page-wrapper > .top-title > span:nth-of-type(3) {
     position: absolute;
-    left: 62.6%;
-    top: 79.8%;
+    left: 133.5%;
+    top: 82.5%;
     height: 3.8rem;
     width: 3.8rem;
     border-radius: 50%;
@@ -2755,7 +2793,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   }
 }
 
-@media (min-width: 860px) {
+@media (min-width: 860px) and (max-width: 959px) {
   html {
     font-size: 62.5%;
   }
@@ -2874,11 +2912,14 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   }
   .top-page-wrapper > .top-title {
     text-align: right;
+    position: absolute;
+    top: 75%;
+    right: 34%;
   }
   .top-page-wrapper > .top-title p {
     position: absolute;
-    top: 78%;
-    left: 23%;
+    top: 51%;
+    left: 39%;
     font-size: 6.4rem;
   }
   .top-page-wrapper > .top-title > span {
@@ -2888,24 +2929,24 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   }
   .top-page-wrapper > .top-title > span:nth-of-type(1) {
     position: absolute;
-    left: 9%;
-    top: 94%;
+    left: 27%;
+    top: 299%;
     height: 1rem;
-    width: 43.5rem;
+    width: 36.5rem;
     background-color: #c4c4c4;
   }
   .top-page-wrapper > .top-title > span:nth-last-of-type(2) {
     position: absolute;
-    left: 84.8%;
-    top: 77.9%;
+    left: 132.8%;
+    top: 42.9%;
     height: 13.8rem;
     width: 4.2rem;
     border-radius: 5px;
   }
   .top-page-wrapper > .top-title > span:nth-of-type(3) {
     position: absolute;
-    left: 62.6%;
-    top: 79.8%;
+    left: 133.5%;
+    top: 82.5%;
     height: 3.8rem;
     width: 3.8rem;
     border-radius: 50%;
@@ -3464,6 +3505,47 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
     width: 3.8rem;
     border-radius: 50%;
   }
+  .top-page-wrapper > .top-title {
+    text-align: right;
+    position: absolute;
+    top: 20%;
+    right: 28%;
+  }
+  .top-page-wrapper > .top-title p {
+    position: absolute;
+    top: 51%;
+    left: 39%;
+    font-size: 6.4rem;
+  }
+  .top-page-wrapper > .top-title > span {
+    display: block;
+    background-color: black;
+    z-index: 11;
+  }
+  .top-page-wrapper > .top-title > span:nth-of-type(1) {
+    position: absolute;
+    left: 27%;
+    top: 299%;
+    height: 1rem;
+    width: 36.5rem;
+    background-color: #c4c4c4;
+  }
+  .top-page-wrapper > .top-title > span:nth-last-of-type(2) {
+    position: absolute;
+    left: 132.8%;
+    top: 42.9%;
+    height: 13.8rem;
+    width: 4.2rem;
+    border-radius: 5px;
+  }
+  .top-page-wrapper > .top-title > span:nth-of-type(3) {
+    position: absolute;
+    left: 133.5%;
+    top: 82.5%;
+    height: 3.8rem;
+    width: 3.8rem;
+    border-radius: 50%;
+  }
   div[class*="section-title"] {
     position: relative;
     -webkit-box-orient: vertical;
@@ -3541,21 +3623,75 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   }
   .aboutme .aboutme-content-wrapper > .mypic {
     width: 260px;
-    height: 480px;
+    height: 530px;
     border-radius: 150px;
     margin-top: 100px;
     margin-left: 100px;
   }
+}
+
+@media (min-width: 960px) and (min-width: 1150px) and (max-width: 1300px) {
+  .aboutme .aboutme-content-wrapper > .mypic {
+    margin-left: 150px;
+  }
+}
+
+@media (min-width: 960px) and (min-width: 1301px) and (max-width: 1450px) {
+  .aboutme .aboutme-content-wrapper > .mypic {
+    margin-left: 200px;
+  }
+}
+
+@media (min-width: 960px) and (min-width: 1451px) and (max-width: 1550px) {
+  .aboutme .aboutme-content-wrapper > .mypic {
+    margin-left: 265px;
+  }
+}
+
+@media (min-width: 960px) and (min-width: 1551px) {
+  .aboutme .aboutme-content-wrapper > .mypic {
+    margin-left: 290px;
+  }
+}
+
+@media (min-width: 960px) {
   .aboutme .aboutme-content-wrapper > .aboutme-text {
     text-align: right;
     display: inline-block;
     width: 100%;
     margin: 80px 85px 0 30px;
   }
+}
+
+@media (min-width: 960px) and (min-width: 1150px) and (max-width: 1300px) {
+  .aboutme .aboutme-content-wrapper > .aboutme-text {
+    margin: 80px 150px 0 30px;
+  }
+}
+
+@media (min-width: 960px) and (min-width: 1301px) and (max-width: 1450px) {
+  .aboutme .aboutme-content-wrapper > .aboutme-text {
+    margin: 80px 200px 0 30px;
+  }
+}
+
+@media (min-width: 960px) and (min-width: 1451px) and (max-width: 1550px) {
+  .aboutme .aboutme-content-wrapper > .aboutme-text {
+    margin: 80px 245px 0 30px;
+  }
+}
+
+@media (min-width: 960px) and (min-width: 1551px) {
+  .aboutme .aboutme-content-wrapper > .aboutme-text {
+    margin: 80px 285px 0 30px;
+  }
+}
+
+@media (min-width: 960px) {
   .aboutme .aboutme-content-wrapper > .aboutme-text > p {
     margin: 47px 0 47px 0;
-    line-height: 30px;
-    font-size: 21px;
+    line-height: 35px;
+    font-size: 25px;
   }
   .history .history-headline {
     position: relative;
@@ -3598,7 +3734,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
     margin-right: 25px;
   }
   .history .history-text > p:nth-child(3) {
-    margin-left: 470px;
+    margin-left: 420px;
   }
   .works .github-info {
     display: -webkit-box;
@@ -3663,6 +3799,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   .works ul > li > .photo {
     margin: 0 50px;
     width: 30%;
+    width: 90%;
   }
   .works ul > li .photo, .works ul > li text {
     -webkit-box-sizing: border-box;
@@ -3698,7 +3835,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
     -ms-grid-rows: 80px 80px;
     -ms-grid-columns: 50% 50%;
         grid-template: 80px 80px / 50% 50%;
-    margin: 85px 0 73px 0;
+    margin: 85px 75px 73px 160px;
   }
   .contact .contact-info-wrapper > li .contact-icon {
     margin-right: 12px;
@@ -3713,8 +3850,8 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
     cursor: pointer;
   }
   .contact .contact-info-wrapper > li .contact-icon {
-    width: 45px;
-    height: 45px;
+    width: 37px;
+    height: 37px;
   }
   .contact .contact-form-wrapper {
     display: -webkit-box;
@@ -3728,6 +3865,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
         -ms-flex-align: left;
             align-items: left;
     margin-top: 73px;
+    margin-left: 27%;
   }
   .contact .contact-form-wrapper p {
     font-family: serif;

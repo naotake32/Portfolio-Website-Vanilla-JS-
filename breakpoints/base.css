@@ -115,6 +115,7 @@ body {
   display: block;
   width: 100%;
   height: auto;
+  position: relative;
 }
 
 .top-page-wrapper .top-img {
@@ -132,15 +133,21 @@ body {
 
 .top-page-wrapper > .top-title {
   text-align: right;
-  width: 100px;
+  width: 330px;
   height: 50px;
   margin: 0 0 0 auto;
+  position: absolute;
+  top: 66.8%;
+  right: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .top-page-wrapper > .top-title p {
   position: absolute;
-  top: 78%;
-  left: 23%;
+  top: 100%;
+  left: 13%;
   font-size: 4.8rem;
 }
 
@@ -152,8 +159,8 @@ body {
 
 .top-page-wrapper > .top-title > span:nth-of-type(1) {
   position: absolute;
-  left: 9%;
-  top: 94%;
+  right: 17%;
+  top: 290%;
   height: 0.6rem;
   width: 25rem;
   background-color: #c4c4c4;
@@ -161,8 +168,8 @@ body {
 
 .top-page-wrapper > .top-title > span:nth-last-of-type(2) {
   position: absolute;
-  left: 84.8%;
-  top: 77.9%;
+  right: 7%;
+  top: 94%;
   height: 10.4rem;
   width: 3.6rem;
   border-radius: 0.5rem;
@@ -170,15 +177,20 @@ body {
 
 .top-page-wrapper > .top-title > span:nth-of-type(3) {
   position: absolute;
-  left: 62.6%;
-  top: 79.8%;
+  right: 8%;
+  top: 99.8%;
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
 }
 
 div[class*="section-title"] {
-  position: relative;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  height: 50px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -250,6 +262,10 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   top: 57.8%;
 }
 
+.aboutme {
+  position: relative;
+}
+
 .aboutme .aboutme-content-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -282,6 +298,10 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   line-height: 2.5rem;
   margin: 4.7rem 0 4.7rem 0;
   line-height: 2.5rem;
+}
+
+.history {
+  position: relative;
 }
 
 .history .history-headline {
@@ -334,6 +354,10 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   font-size: 1.6rem;
   margin: 4rem 2rem;
   line-height: 2.5rem;
+}
+
+.works {
+  position: relative;
 }
 
 .works .github-info {
@@ -430,6 +454,10 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   display: inline-block;
   width: 7.5rem;
   height: 7.5rem;
+}
+
+.contact {
+  position: relative;
 }
 
 .contact h2 {

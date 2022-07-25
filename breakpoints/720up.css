@@ -138,12 +138,15 @@ body {
 
 .top-page-wrapper > .top-title {
   text-align: right;
+  position: absolute;
+  top: 75%;
+  right: 34%;
 }
 
 .top-page-wrapper > .top-title p {
   position: absolute;
-  top: 78%;
-  left: 23%;
+  top: 51%;
+  left: 39%;
   font-size: 6.4rem;
 }
 
@@ -155,17 +158,17 @@ body {
 
 .top-page-wrapper > .top-title > span:nth-of-type(1) {
   position: absolute;
-  left: 9%;
-  top: 94%;
+  left: 27%;
+  top: 299%;
   height: 1rem;
-  width: 43.5rem;
+  width: 36.5rem;
   background-color: #c4c4c4;
 }
 
 .top-page-wrapper > .top-title > span:nth-last-of-type(2) {
   position: absolute;
-  left: 84.8%;
-  top: 77.9%;
+  left: 132.8%;
+  top: 42.9%;
   height: 13.8rem;
   width: 4.2rem;
   border-radius: 5px;
@@ -173,8 +176,8 @@ body {
 
 .top-page-wrapper > .top-title > span:nth-of-type(3) {
   position: absolute;
-  left: 62.6%;
-  top: 79.8%;
+  left: 133.5%;
+  top: 82.5%;
   height: 3.8rem;
   width: 3.8rem;
   border-radius: 50%;

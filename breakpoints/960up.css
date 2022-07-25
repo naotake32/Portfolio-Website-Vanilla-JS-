@@ -197,6 +197,53 @@ body {
   border-radius: 50%;
 }
 
+.top-page-wrapper > .top-title {
+  text-align: right;
+  position: absolute;
+  top: 20%;
+  right: 28%;
+}
+
+.top-page-wrapper > .top-title p {
+  position: absolute;
+  top: 51%;
+  left: 39%;
+  font-size: 6.4rem;
+}
+
+.top-page-wrapper > .top-title > span {
+  display: block;
+  background-color: black;
+  z-index: 11;
+}
+
+.top-page-wrapper > .top-title > span:nth-of-type(1) {
+  position: absolute;
+  left: 27%;
+  top: 299%;
+  height: 1rem;
+  width: 36.5rem;
+  background-color: #c4c4c4;
+}
+
+.top-page-wrapper > .top-title > span:nth-last-of-type(2) {
+  position: absolute;
+  left: 132.8%;
+  top: 42.9%;
+  height: 13.8rem;
+  width: 4.2rem;
+  border-radius: 5px;
+}
+
+.top-page-wrapper > .top-title > span:nth-of-type(3) {
+  position: absolute;
+  left: 133.5%;
+  top: 82.5%;
+  height: 3.8rem;
+  width: 3.8rem;
+  border-radius: 50%;
+}
+
 div[class*="section-title"] {
   position: relative;
   -webkit-box-orient: vertical;
@@ -285,10 +332,34 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
 
 .aboutme .aboutme-content-wrapper > .mypic {
   width: 260px;
-  height: 480px;
+  height: 530px;
   border-radius: 150px;
   margin-top: 100px;
   margin-left: 100px;
+}
+
+@media (min-width: 1150px) and (max-width: 1300px) {
+  .aboutme .aboutme-content-wrapper > .mypic {
+    margin-left: 150px;
+  }
+}
+
+@media (min-width: 1301px) and (max-width: 1450px) {
+  .aboutme .aboutme-content-wrapper > .mypic {
+    margin-left: 200px;
+  }
+}
+
+@media (min-width: 1451px) and (max-width: 1550px) {
+  .aboutme .aboutme-content-wrapper > .mypic {
+    margin-left: 265px;
+  }
+}
+
+@media (min-width: 1551px) {
+  .aboutme .aboutme-content-wrapper > .mypic {
+    margin-left: 290px;
+  }
 }
 
 .aboutme .aboutme-content-wrapper > .aboutme-text {
@@ -298,10 +369,34 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   margin: 80px 85px 0 30px;
 }
 
+@media (min-width: 1150px) and (max-width: 1300px) {
+  .aboutme .aboutme-content-wrapper > .aboutme-text {
+    margin: 80px 150px 0 30px;
+  }
+}
+
+@media (min-width: 1301px) and (max-width: 1450px) {
+  .aboutme .aboutme-content-wrapper > .aboutme-text {
+    margin: 80px 200px 0 30px;
+  }
+}
+
+@media (min-width: 1451px) and (max-width: 1550px) {
+  .aboutme .aboutme-content-wrapper > .aboutme-text {
+    margin: 80px 245px 0 30px;
+  }
+}
+
+@media (min-width: 1551px) {
+  .aboutme .aboutme-content-wrapper > .aboutme-text {
+    margin: 80px 285px 0 30px;
+  }
+}
+
 .aboutme .aboutme-content-wrapper > .aboutme-text > p {
   margin: 47px 0 47px 0;
-  line-height: 30px;
-  font-size: 21px;
+  line-height: 35px;
+  font-size: 25px;
 }
 
 .history .history-headline {
@@ -353,7 +448,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
 }
 
 .history .history-text > p:nth-child(3) {
-  margin-left: 470px;
+  margin-left: 420px;
 }
 
 .works .github-info {
@@ -427,6 +522,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
 .works ul > li > .photo {
   margin: 0 50px;
   width: 30%;
+  width: 90%;
 }
 
 .works ul > li .photo, .works ul > li text {
@@ -468,7 +564,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   -ms-grid-rows: 80px 80px;
   -ms-grid-columns: 50% 50%;
       grid-template: 80px 80px / 50% 50%;
-  margin: 85px 0 73px 0;
+  margin: 85px 75px 73px 160px;
 }
 
 .contact .contact-info-wrapper > li .contact-icon {
@@ -487,8 +583,8 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
 }
 
 .contact .contact-info-wrapper > li .contact-icon {
-  width: 45px;
-  height: 45px;
+  width: 37px;
+  height: 37px;
 }
 
 .contact .contact-form-wrapper {
@@ -503,6 +599,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
       -ms-flex-align: left;
           align-items: left;
   margin-top: 73px;
+  margin-left: 27%;
 }
 
 .contact .contact-form-wrapper p {

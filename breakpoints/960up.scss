@@ -188,6 +188,52 @@ z-index: 15;
                 border-radius: 50%;
             } 
         }
+    }    & > .top-title{
+        text-align: right;
+        position: absolute;
+        top: 20%;
+        right: 28%;
+        &  p {
+            position: absolute;
+
+            top: 51%;
+            left: 39%;
+        
+            font-size: 6.4rem;
+        }
+
+        & > span {
+            display: block;
+            background-color: black;
+            z-index: 11;
+
+            &:nth-of-type(1) {
+                position: absolute;
+                left: 27%;
+                top: 299%;
+                height: 1rem;
+                width: 36.5rem;
+                background-color: #c4c4c4;
+            }
+            
+            &:nth-last-of-type(2) {
+                position: absolute;
+                left: 132.8%;
+                top: 42.9%;
+                height: 13.8rem;
+                width: 4.2rem;
+                border-radius: 5px;
+            }
+
+            &:nth-of-type(3) {
+                position: absolute;
+                left: 133.5%;
+                top: 82.5%;
+                height: 3.8rem;
+                width: 3.8rem;
+                border-radius: 50%;
+            } 
+        }
     }
 }
 
@@ -270,10 +316,29 @@ div[class*="section-title"]{
         justify-content: space-between;
         & > .mypic {
             width: 260px;
-            height: 480px;
+            height: 530px;
             border-radius: 150px;
             margin-top: 100px;
             margin-left: 100px;
+          
+            @media (min-width: 1150px) and (max-width: 1300px)  {
+                margin-left: 150px;
+              }
+            
+            @media (min-width: 1301px) and (max-width: 1450px) {
+                margin-left: 200px;
+
+              }
+
+              @media (min-width: 1451px) and (max-width: 1550px) {
+                margin-left: 265px;
+            }
+
+            @media (min-width: 1551px) {
+                margin-left: 290px;
+            }
+
+
         }
 
         & > .aboutme-text {
@@ -282,10 +347,26 @@ div[class*="section-title"]{
             width: 100%;
             margin: 80px 85px 0 30px;
 
+            @media (min-width: 1150px) and (max-width: 1300px)  {
+                margin: 80px 150px 0 30px;
+              }
+
+            @media (min-width: 1301px) and (max-width: 1450px) {
+                margin: 80px 200px 0 30px;
+              }
+
+            @media (min-width: 1451px) and (max-width: 1550px) {
+                margin: 80px 245px 0 30px
+            }
+
+            @media (min-width: 1551px) {
+                margin: 80px 285px 0 30px
+            }
+
             & > p {
                 margin: 47px 0 47px 0;
-                line-height: 30px;
-                font-size: 21px;
+                line-height: 35px;
+                font-size: 25px;
             }
         }
     }
@@ -338,7 +419,7 @@ div[class*="section-title"]{
             }
 
             &:nth-child(3) {
-                margin-left: 470px;
+                margin-left: 420px;
             }
         }
     }
@@ -396,6 +477,7 @@ div[class*="section-title"]{
         & > .photo {
             margin: 0 50px;
             width: 30%;
+            width: 90%;
         }
 
         & .photo, text {
@@ -441,7 +523,7 @@ div[class*="section-title"]{
         // flex-direction: column;
         display: grid;
         grid-template: 80px 80px / 50% 50%;
-        margin: 85px 0 73px 0 ;
+        margin: 85px 75px 73px 160px;
         & > li {
             // display: flex;
             // align-items: center;
@@ -462,8 +544,8 @@ div[class*="section-title"]{
             }
 
             & .contact-icon {
-                width: 45px;
-                height: 45px;
+                width: 37px;
+                height: 37px;
             }
         }
     }
@@ -473,6 +555,7 @@ div[class*="section-title"]{
         flex-direction: column;
         align-items: left;
         margin-top: 73px;
+        margin-left: 27%;
         //padding-left: 20%;
         & p {
             font-family: serif;
