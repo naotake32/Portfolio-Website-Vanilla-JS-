@@ -185,12 +185,7 @@ body {
 }
 
 div[class*="section-title"] {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100px;
-  height: 50px;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2372,8 +2367,8 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   .top-page-wrapper > .top-title {
     text-align: right;
     position: absolute;
-    top: 75%;
-    right: 34%;
+    top: 20%;
+    right: 28%;
   }
   .top-page-wrapper > .top-title p {
     position: absolute;
@@ -2913,8 +2908,8 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   .top-page-wrapper > .top-title {
     text-align: right;
     position: absolute;
-    top: 75%;
-    right: 34%;
+    top: 20%;
+    right: 28%;
   }
   .top-page-wrapper > .top-title p {
     position: absolute;
@@ -3352,18 +3347,26 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   .container .aboutme {
     height: auto;
     width: 100%;
+    position: relative;
+    margin-top: 15%;
   }
   .container .history {
     height: auto;
     width: 100%;
+    position: relative;
+    margin-top: 20%;
   }
   .container .works {
     height: auto;
     width: 100%;
+    position: relative;
+    margin-top: 20%;
   }
   .container .contact {
     height: auto;
     width: 100%;
+    position: relative;
+    margin-top: 20%;
   }
   .container .clicked {
     opacity: 0.5;
@@ -3444,6 +3447,10 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
     list-style: none;
     padding: 30px 20px;
     margin-top: 25px;
+  }
+  .header .header-menu > li:hover {
+    opacity: 0.7;
+    cursor: pointer;
   }
   .main {
     height: auto;
@@ -3540,24 +3547,29 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   }
   .top-page-wrapper > .top-title > span:nth-of-type(3) {
     position: absolute;
-    left: 133.5%;
+    left: 102.5%;
     top: 82.5%;
     height: 3.8rem;
     width: 3.8rem;
     border-radius: 50%;
   }
   div[class*="section-title"] {
-    position: relative;
+    position: absolute;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     height: 12rem;
     margin-top: 4rem;
+    top: -3%;
+    display: block;
+    width: 34.1rem;
+    right: 3%;
   }
   div[class*="section-title"] h1 {
     position: absolute;
-    right: 20%;
+    right: 15%;
+    top: -149%;
     font-size: 6.4rem;
     text-align: right;
     font-family: 'Roboto';
@@ -3570,16 +3582,16 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   }
   div[class*="section-title"] > span:nth-of-type(1) {
     position: absolute;
-    right: 11%;
-    top: 102.5%;
+    right: 4%;
+    top: -45.5%;
     height: 1rem;
     width: 32rem;
     background-color: #c4c4c4;
   }
   div[class*="section-title"] > span:nth-last-of-type(2) {
     position: absolute;
-    right: 10%;
-    top: 15%;
+    right: 0%;
+    top: -133%;
     height: 11.5rem;
     width: 4.2rem;
     border-radius: 0.5rem;
@@ -3591,23 +3603,23 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   }
   div[class*="section-title"] > span:nth-of-type(3)[id*="aboutme"] {
     position: absolute;
-    right: 264.3px;
-    top: 57.8%;
+    right: 61.7%;
+    top: -91.2%;
   }
   div[class*="section-title"] > span:nth-of-type(3)[id*="history"] {
     position: absolute;
-    right: 157.3px;
-    top: 57.8%;
+    right: 30.3%;
+    top: -92.2%;
   }
   div[class*="section-title"] > span:nth-of-type(3)[id*="works"] {
     position: absolute;
-    right: 190.3px;
-    top: 57.8%;
+    right: 39.5%;
+    top: -92.0%;
   }
   div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
     position: absolute;
-    right: 247.3px;
-    top: 57.8%;
+    right: 56.3%;
+    top: -92.2%;
   }
   .aboutme .aboutme-content-wrapper {
     display: -webkit-box;
@@ -3694,9 +3706,11 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
     font-size: 25px;
   }
   .history .history-headline {
-    position: relative;
+    position: absolute;
     margin-left: 25px;
     margin-top: 60px;
+    top: -5%;
+    left: 2%;
   }
   .history .history-headline > h2 {
     padding-left: 30px;
@@ -3720,7 +3734,9 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
     position: absolute;
     background-color: #c4c4c4;
     height: 2px;
-    width: 200px;
+    width: 246px;
+    left: 0%;
+    top: 120%;
   }
   .history .history-text > p {
     font-size: 28px;
@@ -3729,6 +3745,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   }
   .history .history-text > p:nth-child(1) {
     margin-right: 420px;
+    margin-top: 130px;
   }
   .history .history-text > p:nth-child(2) {
     margin-right: 25px;

@@ -184,10 +184,9 @@ z-index: 15;
 }
 
 div[class*="section-title"]{
-    position: absolute;
-    display: flex;
-    width: 100px;
-    height: 50px;
+    position: relative;
+    // width: 100px;
+    // height: 50px;
     flex-direction: column;
     height: 12rem;
     margin-top: 4rem;

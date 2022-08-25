@@ -139,8 +139,8 @@ body {
 .top-page-wrapper > .top-title {
   text-align: right;
   position: absolute;
-  top: 75%;
-  right: 34%;
+  top: 20%;
+  right: 28%;
 }
 
 .top-page-wrapper > .top-title p {
