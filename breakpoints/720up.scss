@@ -20,29 +20,32 @@ body {
     & .aboutme {
         height: auto;
         width: 100%;
+        margin-top: 20%;
     }
 
     & .history {
         height: auto;
         width: 100%;
+        margin-top: 35%;
     }
 
     & .works {
         height: auto;
         width: 100%;
+        margin-top: 25%;
     }
 
     & .contact {
         height: auto;
         width: 100%;
+        margin-top: 40%;
     }
 
-    & .clicked {
+    &.clicked {
         opacity: 0.5;
         transition-duration: 1s;
     }
 }
-
 .header {
 position: fixed;
 width: 100%;
@@ -175,7 +178,7 @@ z-index: 15;
 
             &:nth-of-type(3) {
                 position: absolute;
-                left: 133.5%;
+                left: 101.5%;
                 top: 82.5%;
                 height: 3.8rem;
                 width: 3.8rem;
@@ -190,6 +193,36 @@ div[class*="section-title"]{
     flex-direction: column;
     height: 12rem;
     margin-top: 4rem;
+
+    &#st-a{position: absolute;
+        flex-direction: column;
+        width: 34.1rem;
+        margin-top: 4rem;
+        top: -27%;
+        right: 1%;
+    }
+
+    &#st-h{position: absolute;
+        flex-direction: column;
+        width: 32.1rem;
+        margin-top: 4rem;
+        top: -33%;
+        right: 0%;
+    }
+    &#st-w{position: absolute;
+        flex-direction: column;
+        width: 32.1rem;
+        margin-top: 4rem;
+        top: -17%;
+        right: 0%;
+        }
+    &#st-c{position: absolute;
+        flex-direction: column;
+        width: 32.1rem;
+        margin-top: 4rem;
+        top: -30%;
+        right: 0%;
+    }
 
         &  h1 {
             position: absolute;
@@ -216,7 +249,7 @@ div[class*="section-title"]{
             
             &:nth-last-of-type(2) {
                 position: absolute;
-                right: 10%;
+                right: 5%;
                 top: 15%;
                 height: 11.5rem;
                 width: 4.2rem;
@@ -230,26 +263,26 @@ div[class*="section-title"]{
 
                 &[id*="aboutme"] {
                     position: absolute;
-                    right: 264.3px;
-                    top: 57.8%;
+                    right: 67%;
+                    top: 54.8%;
                 }
 
                 &[id*="history"] {
                     position: absolute;
-                    right: 157.3px;
-                    top: 57.8%;
+                    right: 36%;
+                    top: 53.8%;
                 }
 
                 &[id*="works"] {
                     position: absolute;
-                    right: 190.3px;
-                    top: 57.8%;
+                    right: 46.3%;
+                    top: 54.8%;
                 }
 
                 &[id*="contact"] {
                     position: absolute;
-                    right: 247.3px;
-                    top: 57.8%;
+                    right: 64.3%;
+                    top: 53.8%;
                 }
             }
 
@@ -407,6 +440,7 @@ div[class*="section-title"]{
         }
         &:nth-child(2) {
             margin-top: 107px;
+            flex-direction: row;
         }
 
         &:nth-child(3) {
@@ -482,7 +516,7 @@ div[class*="section-title"]{
         flex-direction: column;
         align-items: left;
         margin-top: 73px;
-        //padding-left: 20%;
+        margin-left: 23%;
         & p {
             font-family: serif;
             font-size: 25px;
@@ -582,10 +616,9 @@ div[class*="section-title"]{
     opacity: 0;
 
     & .menu-text-wrapper {
-        padding-top: 90px;
 
     & > :nth-child(1) {
-        margin: none;
+        margin-top: 20%;
     }
     & > p {
         margin-bottom: 70px;

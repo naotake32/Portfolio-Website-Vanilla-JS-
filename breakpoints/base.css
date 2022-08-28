@@ -15,6 +15,7 @@ body {
 .container .aboutme {
   height: auto;
   width: 100%;
+  margin-top: 10%;
 }
 
 .container .history {
@@ -32,7 +33,7 @@ body {
   width: 100%;
 }
 
-.container .clicked {
+.container.clicked {
   opacity: 0.5;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
@@ -177,26 +178,71 @@ body {
 
 .top-page-wrapper > .top-title > span:nth-of-type(3) {
   position: absolute;
-  right: 8%;
-  top: 99.8%;
+  right: 30.5%;
+  top: 121.8%;
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
 }
 
 div[class*="section-title"] {
-  position: relative;
+  position: absolute;
+  width: 30rem;
+  height: 12rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 12rem;
-  margin-top: 4rem;
+}
+
+div[class*="section-title"]#st-a {
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 34.1rem;
+  top: -4%;
+  right: 0%;
+}
+
+div[class*="section-title"]#st-h {
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 32.1rem;
+  top: -25%;
+  right: 0%;
+}
+
+div[class*="section-title"]#st-w {
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 32.1rem;
+  top: -9%;
+  right: 0%;
+}
+
+div[class*="section-title"]#st-c {
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 32.1rem;
+  top: -22%;
+  right: 0%;
 }
 
 div[class*="section-title"] h1 {
   position: absolute;
   right: 20%;
+  top: -3%;
   font-size: 5.2rem;
   text-align: right;
   font-family: 'Roboto';
@@ -235,26 +281,26 @@ div[class*="section-title"] > span:nth-of-type(3) {
 
 div[class*="section-title"] > span:nth-of-type(3)[id*="aboutme"] {
   position: absolute;
-  right: 26.43rem;
-  top: 57.8%;
+  top: 51.8%;
+  right: 58.2%;
 }
 
 div[class*="section-title"] > span:nth-of-type(3)[id*="history"] {
   position: absolute;
-  right: 15.73rem;
-  top: 57.8%;
+  right: 33%;
+  top: 51.5%;
 }
 
 div[class*="section-title"] > span:nth-of-type(3)[id*="works"] {
   position: absolute;
-  right: 19.03rem;
-  top: 57.8%;
+  right: 41.5%;
+  top: 51.8%;
 }
 
 div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   position: absolute;
-  right: 24.73rem;
-  top: 57.8%;
+  right: 56%;
+  top: 51.4%;
 }
 
 .aboutme {
@@ -301,13 +347,15 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
 
 .history .history-headline {
   position: relative;
-  margin-left: 2.5rem;
-  margin-top: 7.2rem;
+  margin-top: 23%;
+  margin-left: 4%;
 }
 
 .history .history-headline > h2 {
   font-family: Roboto;
   font-size: 3.2rem;
+  padding-left: 8%;
+  margin-bottom: 1%;
 }
 
 .history .history-headline > span {
@@ -366,7 +414,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 .works .github-info > img {
@@ -459,6 +507,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   text-align: center;
   font-size: 2.6rem;
   font-family: Roboto;
+  line-height: 3.5rem;
 }
 
 .contact .contact-info-wrapper {
@@ -472,7 +521,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 8.5rem;
+  margin-top: 16.5rem;
   margin-bottom: 7.3rem;
   margin-left: 7.5%;
 }
@@ -575,6 +624,8 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   height: 1rem;
   width: 6rem;
   margin: 1rem 0;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .clicked {
@@ -620,7 +671,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
 }
 
 .mobile-menu .menu-text-wrapper > :nth-child(1) {
-  margin: none;
+  margin-top: 30%;
 }
 
 .mobile-menu .menu-text-wrapper > p {

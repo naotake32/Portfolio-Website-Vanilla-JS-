@@ -19,24 +19,28 @@ body {
 .container .aboutme {
   height: auto;
   width: 100%;
+  margin-top: 20%;
 }
 
 .container .history {
   height: auto;
   width: 100%;
+  margin-top: 35%;
 }
 
 .container .works {
   height: auto;
   width: 100%;
+  margin-top: 25%;
 }
 
 .container .contact {
   height: auto;
   width: 100%;
+  margin-top: 40%;
 }
 
-.container .clicked {
+.container.clicked {
   opacity: 0.5;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
@@ -176,7 +180,7 @@ body {
 
 .top-page-wrapper > .top-title > span:nth-of-type(3) {
   position: absolute;
-  left: 133.5%;
+  left: 101.5%;
   top: 82.5%;
   height: 3.8rem;
   width: 3.8rem;
@@ -191,6 +195,54 @@ div[class*="section-title"] {
           flex-direction: column;
   height: 12rem;
   margin-top: 4rem;
+}
+
+div[class*="section-title"]#st-a {
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 34.1rem;
+  margin-top: 4rem;
+  top: -33%;
+  right: 1%;
+}
+
+div[class*="section-title"]#st-h {
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 32.1rem;
+  margin-top: 4rem;
+  top: -33%;
+  right: 0%;
+}
+
+div[class*="section-title"]#st-w {
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 32.1rem;
+  margin-top: 4rem;
+  top: -17%;
+  right: 0%;
+}
+
+div[class*="section-title"]#st-c {
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 32.1rem;
+  margin-top: 4rem;
+  top: -30%;
+  right: 0%;
 }
 
 div[class*="section-title"] h1 {
@@ -219,7 +271,7 @@ div[class*="section-title"] > span:nth-of-type(1) {
 
 div[class*="section-title"] > span:nth-last-of-type(2) {
   position: absolute;
-  right: 10%;
+  right: 5%;
   top: 15%;
   height: 11.5rem;
   width: 4.2rem;
@@ -234,26 +286,26 @@ div[class*="section-title"] > span:nth-of-type(3) {
 
 div[class*="section-title"] > span:nth-of-type(3)[id*="aboutme"] {
   position: absolute;
-  right: 264.3px;
-  top: 57.8%;
+  right: 67%;
+  top: 54.8%;
 }
 
 div[class*="section-title"] > span:nth-of-type(3)[id*="history"] {
   position: absolute;
-  right: 157.3px;
-  top: 57.8%;
+  right: 36%;
+  top: 53.8%;
 }
 
 div[class*="section-title"] > span:nth-of-type(3)[id*="works"] {
   position: absolute;
-  right: 190.3px;
-  top: 57.8%;
+  right: 46.3%;
+  top: 54.8%;
 }
 
 div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   position: absolute;
-  right: 247.3px;
-  top: 57.8%;
+  right: 64.3%;
+  top: 53.8%;
 }
 
 .aboutme .aboutme-content-wrapper {
@@ -418,6 +470,10 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
 
 .works ul li:nth-child(2) {
   margin-top: 107px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .works ul li:nth-child(3) {
@@ -508,6 +564,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
       -ms-flex-align: left;
           align-items: left;
   margin-top: 73px;
+  margin-left: 25%;
 }
 
 .contact .contact-form-wrapper p {
@@ -608,12 +665,8 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   opacity: 0;
 }
 
-.mobile-menu .menu-text-wrapper {
-  padding-top: 90px;
-}
-
 .mobile-menu .menu-text-wrapper > :nth-child(1) {
-  margin: none;
+  margin-top: 25%;
 }
 
 .mobile-menu .menu-text-wrapper > p {
