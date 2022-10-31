@@ -24,10 +24,10 @@
                 </div>
                 <ul class="header-menu">
                     <li>
-                        <a >Top</a>
+                        <a href="#st-t" >Top</a>
                     </li>
                     <li>
-                        <a href="#section-a">About me</a>
+                        <a href="#st-a">About me</a>
                     </li>
                     <li>
                         <a href="#st-h">History</a>
@@ -46,17 +46,17 @@
                 </button>
             </header>
             <div class="main">
-                <div class="top-page-wrapper">
+                <div id="mst-t" class="top-page-wrapper">
                     <div class="top-img">
                     </div>
-                    <div class="top-title">
+                    <div id="st-t" class="top-title">
                         <p>Naoki<br/>Mitsutake</p>
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
                 </div>
-                <div id="section-a" class="aboutme">
+                <div id="mst-a" class="aboutme">
                     <div class="section-title-aboutme" id="st-a">
                         <h1>About me</h1>
                         <span></span>
@@ -82,17 +82,12 @@
                     </div>
                     </div>
                 </div>
-                <div class="history">
+                <div id="mst-h" class="history">
                     <div class="section-title-history" id="st-h">
                         <h1 >History</h1>
                         <span></span>
                         <span></span>
                         <span id="puck-history"></span>
-                    </div>
-                    <div class="history-headline">
-                        <h2>Nanyo.Corp</h2>
-                        <span></span>
-                        <span></span>
                     </div>
                     <div class="history-text">
                         <p>texttexttexttexttexttexttexttexttexttext<br>
@@ -109,7 +104,7 @@
                             texttexttexttexttexttexttexttexttexttext</p>
                     </div>
                 </div>
-                <div class="works">
+                <div id="mst-w" class="works">
                     <div class="section-title-works" id="st-w">
                         <h1 >Works</h1>
                         <span></span>
@@ -150,7 +145,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="contact" >
+                <div id="mst-c" class="contact" >
                     <div class="section-title-contact" id="st-c">
                         <h1 >Contact</h1>
                         <span></span>
@@ -176,27 +171,34 @@
                             </li>
                         </ul>
                         <h2>You can also send me a message directly!</h2>
-                    <div class="contact-form-wrapper">
+                    <form class="contact-form" onsubmit="sendEmail(); reset(); return false;">
                             <p>name</p>
-                            <input type="text" />
+                            <input class="nameInput"type="text" />
+                            <p>email adress</p>
+                            <input class="mailInput" type="text" />
                             <p>message</p>
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <textarea class="message" name="" id="" cols="30" rows="10"></textarea>
                             <button>send</button>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
         <nav class="mobile-menu">
             <div class="menu-text-wrapper">
-                <p>Top</p>
-                <p>About me</p>
-                <p>Career</p>
-                <p>Works</p>
-                <p>Contact</p>
+                <a href="#mst-t" >Top</a>
+                <a href="#mst-a">About me</a>
+                <a href="#mst-h">History</a>
+                <a href="#mst-w">Works</a>
+                <a href="#mst-c">Contanct</a>
             </div>
         </nav>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdn.jsdelivr.net/npm/gsap@3.7.0/dist/ScrollTrigger.min.js"></script>
     <script src="scripts/mobilemenu.JS"></script>
+    <script src="./scripts/animations.js"></script>
+    <script src="./scripts/scroll.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./scripts/mail.js"></script>
 </body>
 </html>

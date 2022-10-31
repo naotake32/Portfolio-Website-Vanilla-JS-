@@ -494,9 +494,41 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
 }
 
 .works .skill-icons-wrapper .works-icons {
+  -webkit-animation: float 2s ease-in-out infinite;
+          animation: float 2s ease-in-out infinite;
   display: inline-block;
-  width: 7.5rem;
-  height: 7.5rem;
+  width: 102px;
+  height: 102px;
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translateY(16%);
+            transform: translateY(16%);
+  }
+  50% {
+    -webkit-transform: translateY(24%);
+            transform: translateY(24%);
+  }
+  100% {
+    -webkit-transform: translateY(16%);
+            transform: translateY(16%);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translateY(16%);
+            transform: translateY(16%);
+  }
+  50% {
+    -webkit-transform: translateY(24%);
+            transform: translateY(24%);
+  }
+  100% {
+    -webkit-transform: translateY(16%);
+            transform: translateY(16%);
+  }
 }
 
 .contact {
@@ -555,7 +587,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   height: 3rem;
 }
 
-.contact .contact-form-wrapper {
+.contact .contact-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -570,19 +602,19 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   margin-left: 6.5%;
 }
 
-.contact .contact-form-wrapper p {
+.contact .contact-form p {
   font-family: serif;
   font-size: 1.6rem;
   margin-bottom: 1.5rem;
 }
 
-.contact .contact-form-wrapper input {
+.contact .contact-form input {
   width: 20rem;
   background-color: #c4c4c4;
   border: none;
 }
 
-.contact .contact-form-wrapper textarea {
+.contact .contact-form textarea {
   background-color: #c4c4c4;
   width: 27.7rem;
   height: 28.8rem;
@@ -590,7 +622,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   border: none;
 }
 
-.contact .contact-form-wrapper button {
+.contact .contact-form button {
   background-color: black;
   color: white;
   font-family: serif;
@@ -602,7 +634,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   margin-bottom: 0.5rem;
 }
 
-.contact .contact-form-wrapper button:hover {
+.contact .contact-form button:hover {
   opacity: 0.7;
   cursor: pointer;
 }
@@ -670,18 +702,35 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   opacity: 0;
 }
 
+.mobile-menu .menu-text-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80%;
+}
+
 .mobile-menu .menu-text-wrapper > :nth-child(1) {
   margin-top: 30%;
 }
 
-.mobile-menu .menu-text-wrapper > p {
-  margin-bottom: 7rem;
-  text-align: center;
+.mobile-menu .menu-text-wrapper > a {
+  text-decoration: none;
+  color: black;
   font-family: serif;
   font-size: 4rem;
 }
 
-.mobile-menu .menu-text-wrapper > p:hover {
+.mobile-menu .menu-text-wrapper > a:hover {
   opacity: 0.7;
   cursor: pointer;
 }
