@@ -1650,7 +1650,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
     padding-left: 25px;
   }
   .aboutme .aboutme-content-wrapper > .aboutme-text {
-    text-align: right;
+    text-align: left;
     display: inline-block;
     width: 100%;
     margin: 20px 30px 0 30px;
@@ -2285,7 +2285,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
     margin-left: 30px;
   }
   .aboutme .aboutme-content-wrapper > .aboutme-text {
-    text-align: right;
+    text-align: left;
     display: inline-block;
     width: 100%;
     margin: 20px 30px 0 30px;
@@ -2920,7 +2920,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
     margin-left: 30px;
   }
   .aboutme .aboutme-content-wrapper > .aboutme-text {
-    text-align: right;
+    text-align: left;
     display: inline-block;
     width: 100%;
     margin: 80px 35px 0 30px;
@@ -3557,7 +3557,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
     margin-left: 72px;
   }
   .aboutme .aboutme-content-wrapper > .aboutme-text {
-    text-align: right;
+    text-align: left;
     display: inline-block;
     width: 100%;
     margin: 80px 65px 0 30px;
@@ -4284,7 +4284,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
 
 @media (min-width: 960px) {
   .aboutme .aboutme-content-wrapper > .aboutme-text {
-    text-align: right;
+    text-align: left;
     display: inline-block;
     width: 100%;
     margin: 80px 85px 0 30px;
