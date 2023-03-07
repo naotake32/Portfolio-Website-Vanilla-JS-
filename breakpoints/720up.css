@@ -481,6 +481,85 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   margin-top: 107px;
 }
 
+.works ul li .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: opacity 200ms;
+  transition: opacity 200ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.works ul li .overlay.light {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.works ul li .overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.works ul li .popup {
+  margin: 75px auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #666;
+  width: 285px;
+  height: 200px;
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: -28%;
+  left: 28%;
+}
+
+.light .works ul li .popup {
+  border-color: #aaa;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.works ul li .popup h2 {
+  margin-top: 0;
+  color: #666;
+}
+
+.works ul li .popup .close {
+  position: absolute;
+  width: 20px;
+  height: 8px;
+  top: 20px;
+  right: 20px;
+  opacity: 0.8;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #666;
+}
+
+.works ul li .popup .close:hover {
+  opacity: 1;
+}
+
+.works ul li .popup .content {
+  max-height: 400px;
+  overflow: auto;
+}
+
+.works ul li .popup p {
+  margin: 0 0 1em;
+}
+
+.works ul li .popup p:last-child {
+  margin: 0;
+}
+
 .works .skillsets-wrapper {
   font-family: Roboto;
   font-size: 48px;

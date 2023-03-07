@@ -572,6 +572,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   font-size: 32px;
   font-family: Roboto;
   font-weight: 300;
+  overflow-wrap: break-word;
 }
 
 .contact .contact-info-wrapper > li .contactinfo-text:hover {
