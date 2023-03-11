@@ -1,24 +1,6 @@
 @import 'breakpoints/base';
 
 
-@media (min-width: 429px) and (max-width: 519px)  {
-    @import "breakpoints/429up";
-  }
-
-@media (min-width: 520px) and (max-width: 619px)  {
-    @import "breakpoints/520up";
-  }
-
-@media (min-width: 620px) and (max-width: 719px)  {
-    @import "breakpoints/620up";
-}
-
-@media (min-width: 720px) and (max-width: 859px) {
-    @import "breakpoints/720up";
-}
-@media (min-width: 860px) and (max-width: 959px) {
-    @import "breakpoints/860up";
-}
 
 @media (min-width: 960px) {
     @import "breakpoints/960up";

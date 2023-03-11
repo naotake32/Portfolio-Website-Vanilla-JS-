@@ -461,7 +461,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   font-size: 25px;
 }
 
-.history .history-headline {
+.history .history-headline1 {
   position: absolute;
   margin-left: 25px;
   margin-top: 60px;
@@ -469,18 +469,18 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   left: 2%;
 }
 
-.history .history-headline > h2 {
+.history .history-headline1 > h2 {
   padding-left: 30px;
   font-family: Roboto;
   font-size: 40px;
 }
 
-.history .history-headline > span {
+.history .history-headline1 > span {
   display: inline-block;
   z-index: 11;
 }
 
-.history .history-headline > span:nth-of-type(1) {
+.history .history-headline1 > span:nth-of-type(1) {
   position: absolute;
   background-color: black;
   width: 18px;
@@ -490,7 +490,35 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   top: 30%;
 }
 
-.history .history-headline > span:nth-of-type(2) {
+.history .history-headline1 > span:nth-of-type(2) {
+  position: absolute;
+  background-color: #c4c4c4;
+  height: 2px;
+  width: 246px;
+  left: 0%;
+  top: 120%;
+}
+
+.history .history-headline2 {
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 60px;
+  top: 45%;
+  left: 2%;
+}
+
+.history .history-headline2 > h2 {
+  padding-left: 30px;
+  font-family: Roboto;
+  font-size: 40px;
+}
+
+.history .history-headline2 > span {
+  display: inline-block;
+  z-index: 11;
+}
+
+.history .history-headline2 > span:nth-of-type(2) {
   position: absolute;
   background-color: #c4c4c4;
   height: 2px;
@@ -608,6 +636,15 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   transition: opacity 200ms;
   visibility: hidden;
   opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .works ul > li .overlay.light {
@@ -628,8 +665,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   height: 200px;
   -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: -34%;
+  position: relative;
 }
 
 .light .works ul > li .popup {
@@ -736,12 +772,32 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
 }
 
 .contact .contact-info-wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 80px 80px;
-  -ms-grid-columns: 50% 50%;
-      grid-template: 80px 80px / 50% 50%;
-  margin: 85px 75px 73px 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 16.5rem;
+  margin-bottom: 7.3rem;
+  margin-left: 7.5%;
+  padding-top: 9rem;
+}
+
+.contact .contact-info-wrapper > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 0;
+  -ms-overflow-style: none;
+  -webkit-overflow-style: none;
 }
 
 .contact .contact-info-wrapper > li .contact-icon {

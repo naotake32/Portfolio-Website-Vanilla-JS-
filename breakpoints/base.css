@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 62.5%;
 }
@@ -29,7 +30,7 @@ body {
 }
 
 .container .contact {
-  height: auto;
+  height: 30rem;
   width: 100%;
 }
 
@@ -143,6 +144,22 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (min-width: 600px) and (max-width: 959px) {
+  .top-page-wrapper > .top-title {
+    /* 横幅が600px以上の場合に適用するスタイル */
+    text-align: right;
+    width: 330px;
+    height: 50px;
+    margin: 0 0 0 auto;
+    position: absolute;
+    top: 76.8%;
+    right: 7%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .top-page-wrapper > .top-title p {
@@ -331,7 +348,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   text-align: center;
   display: inline-block;
   width: 100%;
-  margin: 2rem 3rem 0 3rem;
+  margin: 2rem 3rem 17rem 3rem;
 }
 
 .aboutme .aboutme-content-wrapper > .aboutme-text > p {
@@ -556,6 +573,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   margin-top: 16.5rem;
   margin-bottom: 7.3rem;
   margin-left: 7.5%;
+  padding-top: 9rem;
 }
 
 .contact .contact-info-wrapper > li {
@@ -565,6 +583,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 15px 0;
 }
 
 .contact .contact-info-wrapper > li .contact-icon {
@@ -575,6 +594,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   font-size: 2.2rem;
   font-family: Roboto;
   font-weight: 300;
+  overflow: auto;
 }
 
 .contact .contact-info-wrapper > li .contactinfo-text:hover {
