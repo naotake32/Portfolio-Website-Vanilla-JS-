@@ -24,6 +24,7 @@ body {
     & .history {
         height: auto;
         width: 100%;
+        margin-bottom: 15rem;
     }
 
     & .works {
@@ -78,7 +79,7 @@ z-index: 15;
             &:nth-of-type(1) {
                 position: absolute;
                 left: 10%;
-                top: 85.5%;
+                top: 94.5px;
                 height: 0.5rem;
                 width: 13.5rem;
             }
@@ -94,7 +95,7 @@ z-index: 15;
 
             &:nth-of-type(3) {
                 position: absolute;
-                left: 64.9%;
+                left: 97.5px;
                 top: 45.5%;
                 height: 1.45rem;
                 width: 1.45rem;
@@ -185,7 +186,8 @@ z-index: 15;
 
             &:nth-of-type(3) {
                 position: absolute;
-                right: 30.5%;
+                //right: 30.5%;
+                left: 198px;
                 top: 121.8%;
                 height: 3rem;
                 width: 3rem;
@@ -272,25 +274,25 @@ div[class*="section-title"]{
                 &[id*="aboutme"] {
                     position: absolute;
                     top: 51.8%;
-                    right: 58.2%;
+                    left: 112.2px;
                 }
 
                 &[id*="history"] {
                     position: absolute;
                     right: 33%;
                     top: 51.5%;
-                
+                    display: none;
                 }
 
                 &[id*="works"] {
                     position: absolute;
-                    right: 41.5%;
+                    left: 157.5px;
                     top: 51.8%;
                 }
 
                 &[id*="contact"] {
                     position: absolute;
-                    right: 56%;
+                    left: 111px;
                     top: 51.4%;
                 }
             }
@@ -318,10 +320,11 @@ div[class*="section-title"]{
             margin: 2rem 3rem 17rem 3rem;
 
             & > p {
-                font-size: 1.5rem;
+                font-size: 2rem;
                 line-height: 2.5rem;
                 margin: 4.7rem 0 4.7rem 0;
-                line-height: 2.5rem;
+                line-height: 3.5rem;
+                padding: 0 1rem;
             }
         }
     }
@@ -329,15 +332,47 @@ div[class*="section-title"]{
 
 .history {
     position: relative;
-    & .history-headline {
+    & .history-headline1 {
         position: relative;
-        margin-top: 23%;
+        margin-top: 10%;
         margin-left: 4%;
         & > h2 {
             font-family: Roboto;
             font-size: 3.2rem;
-            padding-left: 8%;
             margin-bottom: 1%;
+            text-align: center;
+        }
+
+        & > span {
+            display: inline-block;
+            z-index: 11;
+            &:nth-of-type(1) {
+                position: absolute;
+                background-color: black;
+                width: 1.8rem;
+                height: 1.8rem;
+                border-radius: 50%;
+                left: 1.5%;
+                top: 30%;
+            }
+            &:nth-of-type(2) {
+                position: absolute;
+                background-color: #c4c4c4;
+                height: 0.2rem;
+                width: 20rem;
+            }
+        }
+    }
+
+    & .history-headline2 {
+        position: relative;
+        margin-top: 10%;
+        margin-left: 4%;
+        & > h2 {
+            font-family: Roboto;
+            font-size: 3.2rem;
+            margin-bottom: 1%;
+            text-align: center;
         }
 
         & > span {
@@ -426,6 +461,7 @@ div[class*="section-title"]{
 
         & > .photo {
             margin-bottom: 3rem;
+            border-radius: 1rem;
         }
 
         & .photo, text {
@@ -433,6 +469,74 @@ div[class*="section-title"]{
             box-sizing: border-box;
         }
         }
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,0.5);
+        transition: opacity 200ms;
+        visibility: hidden;
+        opacity: 0;
+
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        &.light {
+        background: rgba(255,255,255,0.5);
+      }
+      &:target {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    
+    .popup {
+        margin: 75px auto;
+        padding: 20px;
+        background: #fff;
+        border: 1px solid #666;
+        width: 285px;
+        height: 200px;
+        box-shadow: 0 0 50px rgba(0,0,0,0.5);
+        position: relative;
+      .light & {
+        border-color: #aaa;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+      }
+      h2 {
+        margin-top: 0;
+        color: #666;
+      }
+      .close {
+        position: absolute;
+        width: 20px;
+        height: 8px;
+        top: 20px;
+        right: 20px;
+        opacity: 0.8;
+        transition: all 200ms;
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #666;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      .content {
+        max-height: 400px;
+        overflow: auto;
+      }
+      p {
+        margin: 0 0 1em;
+        &:last-child {
+          margin: 0;
+        }
+      }
     }
 
     .skillsets-wrapper {

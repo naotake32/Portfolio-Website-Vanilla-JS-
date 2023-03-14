@@ -22,6 +22,7 @@ body {
 .container .history {
   height: auto;
   width: 100%;
+  margin-bottom: 15rem;
 }
 
 .container .works {
@@ -81,7 +82,7 @@ body {
 .header > .header-logo > span:nth-of-type(1) {
   position: absolute;
   left: 10%;
-  top: 85.5%;
+  top: 94.5px;
   height: 0.5rem;
   width: 13.5rem;
 }
@@ -97,7 +98,7 @@ body {
 
 .header > .header-logo > span:nth-of-type(3) {
   position: absolute;
-  left: 64.9%;
+  left: 97.5px;
   top: 45.5%;
   height: 1.45rem;
   width: 1.45rem;
@@ -195,7 +196,7 @@ body {
 
 .top-page-wrapper > .top-title > span:nth-of-type(3) {
   position: absolute;
-  right: 30.5%;
+  left: 198px;
   top: 121.8%;
   height: 3rem;
   width: 3rem;
@@ -299,24 +300,25 @@ div[class*="section-title"] > span:nth-of-type(3) {
 div[class*="section-title"] > span:nth-of-type(3)[id*="aboutme"] {
   position: absolute;
   top: 51.8%;
-  right: 58.2%;
+  left: 112.2px;
 }
 
 div[class*="section-title"] > span:nth-of-type(3)[id*="history"] {
   position: absolute;
   right: 33%;
   top: 51.5%;
+  display: none;
 }
 
 div[class*="section-title"] > span:nth-of-type(3)[id*="works"] {
   position: absolute;
-  right: 41.5%;
+  left: 157.5px;
   top: 51.8%;
 }
 
 div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   position: absolute;
-  right: 56%;
+  left: 111px;
   top: 51.4%;
 }
 
@@ -352,35 +354,36 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
 }
 
 .aboutme .aboutme-content-wrapper > .aboutme-text > p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 2.5rem;
   margin: 4.7rem 0 4.7rem 0;
-  line-height: 2.5rem;
+  line-height: 3.5rem;
+  padding: 0 1rem;
 }
 
 .history {
   position: relative;
 }
 
-.history .history-headline {
+.history .history-headline1 {
   position: relative;
-  margin-top: 23%;
+  margin-top: 10%;
   margin-left: 4%;
 }
 
-.history .history-headline > h2 {
+.history .history-headline1 > h2 {
   font-family: Roboto;
   font-size: 3.2rem;
-  padding-left: 8%;
   margin-bottom: 1%;
+  text-align: center;
 }
 
-.history .history-headline > span {
+.history .history-headline1 > span {
   display: inline-block;
   z-index: 11;
 }
 
-.history .history-headline > span:nth-of-type(1) {
+.history .history-headline1 > span:nth-of-type(1) {
   position: absolute;
   background-color: black;
   width: 1.8rem;
@@ -390,7 +393,42 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   top: 30%;
 }
 
-.history .history-headline > span:nth-of-type(2) {
+.history .history-headline1 > span:nth-of-type(2) {
+  position: absolute;
+  background-color: #c4c4c4;
+  height: 0.2rem;
+  width: 20rem;
+}
+
+.history .history-headline2 {
+  position: relative;
+  margin-top: 10%;
+  margin-left: 4%;
+}
+
+.history .history-headline2 > h2 {
+  font-family: Roboto;
+  font-size: 3.2rem;
+  margin-bottom: 1%;
+  text-align: center;
+}
+
+.history .history-headline2 > span {
+  display: inline-block;
+  z-index: 11;
+}
+
+.history .history-headline2 > span:nth-of-type(1) {
+  position: absolute;
+  background-color: black;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  left: 1.5%;
+  top: 30%;
+}
+
+.history .history-headline2 > span:nth-of-type(2) {
   position: absolute;
   background-color: #c4c4c4;
   height: 0.2rem;
@@ -484,12 +522,99 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
 
 .works ul li > .photo {
   margin-bottom: 3rem;
+  border-radius: 1rem;
 }
 
 .works ul li .photo, .works ul li text {
   width: 90%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.works .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: opacity 200ms;
+  transition: opacity 200ms;
+  visibility: hidden;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.works .overlay.light {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.works .overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.works .popup {
+  margin: 75px auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #666;
+  width: 285px;
+  height: 200px;
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.light .works .popup {
+  border-color: #aaa;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.works .popup h2 {
+  margin-top: 0;
+  color: #666;
+}
+
+.works .popup .close {
+  position: absolute;
+  width: 20px;
+  height: 8px;
+  top: 20px;
+  right: 20px;
+  opacity: 0.8;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #666;
+}
+
+.works .popup .close:hover {
+  opacity: 1;
+}
+
+.works .popup .content {
+  max-height: 400px;
+  overflow: auto;
+}
+
+.works .popup p {
+  margin: 0 0 1em;
+}
+
+.works .popup p:last-child {
+  margin: 0;
 }
 
 .works .skillsets-wrapper {
@@ -830,7 +955,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   .header > .header-logo > span:nth-of-type(1) {
     position: absolute;
     left: 10%;
-    top: 85.5%;
+    top: 94.5px;
     height: 5px;
     width: 135px;
   }
@@ -844,7 +969,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   }
   .header > .header-logo > span:nth-of-type(3) {
     position: absolute;
-    left: 64.9%;
+    left: 97.5px;
     top: 45.5%;
     height: 14.5px;
     width: 14.5px;
@@ -972,7 +1097,7 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   }
   .top-page-wrapper > .top-title > span:nth-of-type(3) {
     position: absolute;
-    left: 102.5%;
+    left: 300px;
     top: 82.5%;
     height: 3.8rem;
     width: 3.8rem;
@@ -1143,25 +1268,25 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
 
 @media (min-width: 960px) and (min-width: 1150px) and (max-width: 1300px) {
   .aboutme .aboutme-content-wrapper > .aboutme-text {
-    margin: 80px 150px 0 30px;
+    margin: 8rem 8.5rem 0 8rem;
   }
 }
 
 @media (min-width: 960px) and (min-width: 1301px) and (max-width: 1450px) {
   .aboutme .aboutme-content-wrapper > .aboutme-text {
-    margin: 80px 200px 0 30px;
+    margin: 8rem 20rem 0 8rem;
   }
 }
 
 @media (min-width: 960px) and (min-width: 1451px) and (max-width: 1550px) {
   .aboutme .aboutme-content-wrapper > .aboutme-text {
-    margin: 80px 245px 0 30px;
+    margin: 8rem 24.5rem 0 8rem;
   }
 }
 
 @media (min-width: 960px) and (min-width: 1551px) {
   .aboutme .aboutme-content-wrapper > .aboutme-text {
-    margin: 80px 285px 0 30px;
+    margin: 8rem 18.5rem 0 20rem;
   }
 }
 

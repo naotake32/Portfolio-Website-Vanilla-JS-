@@ -85,7 +85,7 @@ body {
 .header > .header-logo > span:nth-of-type(1) {
   position: absolute;
   left: 10%;
-  top: 85.5%;
+  top: 94.5px;
   height: 5px;
   width: 135px;
 }
@@ -101,7 +101,7 @@ body {
 
 .header > .header-logo > span:nth-of-type(3) {
   position: absolute;
-  left: 64.9%;
+  left: 97.5px;
   top: 45.5%;
   height: 14.5px;
   width: 14.5px;
@@ -249,7 +249,7 @@ body {
 
 .top-page-wrapper > .top-title > span:nth-of-type(3) {
   position: absolute;
-  left: 102.5%;
+  left: 300px;
   top: 82.5%;
   height: 3.8rem;
   width: 3.8rem;
@@ -433,25 +433,25 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
 
 @media (min-width: 1150px) and (max-width: 1300px) {
   .aboutme .aboutme-content-wrapper > .aboutme-text {
-    margin: 80px 150px 0 30px;
+    margin: 8rem 8.5rem 0 8rem;
   }
 }
 
 @media (min-width: 1301px) and (max-width: 1450px) {
   .aboutme .aboutme-content-wrapper > .aboutme-text {
-    margin: 80px 200px 0 30px;
+    margin: 8rem 20rem 0 8rem;
   }
 }
 
 @media (min-width: 1451px) and (max-width: 1550px) {
   .aboutme .aboutme-content-wrapper > .aboutme-text {
-    margin: 80px 245px 0 30px;
+    margin: 8rem 24.5rem 0 8rem;
   }
 }
 
 @media (min-width: 1551px) {
   .aboutme .aboutme-content-wrapper > .aboutme-text {
-    margin: 80px 285px 0 30px;
+    margin: 8rem 18.5rem 0 20rem;
   }
 }
 
