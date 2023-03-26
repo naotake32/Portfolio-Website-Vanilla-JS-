@@ -282,6 +282,7 @@ div[class*="section-title"] > span:nth-last-of-type(2) {
 }
 
 .aboutme .aboutme-content-wrapper > .aboutme-text > p {
+  font-family: Roboto;
   font-size: 2rem;
   line-height: 2.5rem;
   margin: 4.7rem 0 4.7rem 0;
