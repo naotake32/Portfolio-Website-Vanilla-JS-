@@ -70,42 +70,10 @@ body {
   cursor: pointer;
 }
 
-.header > .header-logo > .logo-text {
-  padding-top: 45px;
-  padding-right: 20px;
-  margin-left: 20px;
-}
-
-.header > .header-logo > span {
-  display: block;
-  background-color: black;
-  z-index: 10;
-}
-
-.header > .header-logo > span:nth-of-type(1) {
-  position: absolute;
-  left: 10%;
-  top: 94.5px;
-  height: 5px;
-  width: 135px;
-}
-
-.header > .header-logo > span:nth-last-of-type(2) {
-  position: absolute;
-  left: 95%;
-  top: 35.5%;
-  height: 60px;
-  width: 18px;
-  border-radius: 5px;
-}
-
-.header > .header-logo > span:nth-of-type(3) {
-  position: absolute;
-  left: 97.5px;
-  top: 45.5%;
-  height: 14.5px;
-  width: 14.5px;
-  border-radius: 50%;
+.header > .header-logo > img {
+  width: 150px;
+  margin-top: 10%;
+  margin-left: 10%;
 }
 
 .header .header-menu {
@@ -203,15 +171,6 @@ body {
   border-radius: 5px;
 }
 
-.top-page-wrapper > .top-title > span:nth-of-type(3) {
-  position: absolute;
-  left: 337px;
-  top: 82.5%;
-  height: 3.8rem;
-  width: 3.8rem;
-  border-radius: 50%;
-}
-
 div[class*="section-title"] {
   position: absolute;
   -webkit-box-orient: vertical;
@@ -302,36 +261,6 @@ div[class*="section-title"] > span:nth-last-of-type(2) {
   height: 11.5rem;
   width: 4.2rem;
   border-radius: 0.5rem;
-}
-
-div[class*="section-title"] > span:nth-of-type(3) {
-  height: 3.8rem;
-  width: 3.8rem;
-  border-radius: 50%;
-}
-
-div[class*="section-title"] > span:nth-of-type(3)[id*="aboutme"] {
-  position: absolute;
-  left: 90px;
-  top: -91.2%;
-}
-
-div[class*="section-title"] > span:nth-of-type(3)[id*="history"] {
-  position: absolute;
-  right: 31.3%;
-  top: -92.2%;
-}
-
-div[class*="section-title"] > span:nth-of-type(3)[id*="works"] {
-  position: absolute;
-  left: 149px;
-  top: -92.0%;
-}
-
-div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
-  position: absolute;
-  left: 93px;
-  top: -92.2%;
 }
 
 .aboutme .aboutme-content-wrapper {
@@ -612,8 +541,8 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
   padding: 20px;
   background: #fff;
   border: 1px solid #666;
-  width: 285px;
-  height: 200px;
+  width: 100%;
+  height: 150%;
   -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   position: relative;
@@ -628,6 +557,8 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
 .works ul > li .popup h2 {
   margin-top: 0;
   color: #666;
+  font-size: 20px;
+  font-family: 'Roboto';
 }
 
 .works ul > li .popup .close {
@@ -651,15 +582,23 @@ div[class*="section-title"] > span:nth-of-type(3)[id*="contact"] {
 
 .works ul > li .popup .content {
   max-height: 400px;
-  overflow: auto;
-}
-
-.works ul > li .popup p {
-  margin: 0 0 1em;
+  overflow: visible;
 }
 
 .works ul > li .popup p:last-child {
   margin: 0;
+  font-family: 'Roboto';
+  font-size: 13px;
+  line-height: 15px;
+  margin-top: 15px;
+}
+
+@media (min-width: 769px) and (max-width: 910px) {
+  .works ul > li .popup p:last-child {
+    font-size: 10px;
+    line-height: 14px;
+    margin-top: 5px;
+  }
 }
 
 .works .skillsets-wrapper {
