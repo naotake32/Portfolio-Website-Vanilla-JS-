@@ -470,7 +470,7 @@ div[class*="section-title"]{
         position: absolute;
         margin-left: 25px;
         margin-top: 60px;
-        top: 45%;
+        top: 40%;
         left: 2%;
         & > h2 {
             padding-left: 30px;
@@ -494,23 +494,15 @@ div[class*="section-title"]{
     }
 
     & .history-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
         & > p {
-            font-size: 28px;
-            margin-top: 80px;
-            line-height: 45px;
-
-            &:nth-child(1) {
-                margin-right: 420px;
-                margin-top: 130px;
-            }
-
-            &:nth-child(2) {
-                margin-right: 25px;
-            }
-
-            &:nth-child(3) {
-                margin-left: 420px;
-            }
+            font-size: 2.6rem;
+            margin: 4rem 2rem;
+            line-height: 3.5rem;
+            padding-top: 60px;
         }
     }
 }

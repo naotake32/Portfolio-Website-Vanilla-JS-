@@ -380,6 +380,7 @@ div[class*="section-title"] > span:nth-last-of-type(2) {
   font-size: 1.6rem;
   margin: 4rem 2rem;
   line-height: 2.5rem;
+  font-family: Roboto;
 }
 
 .works {
@@ -1177,7 +1178,7 @@ div[class*="section-title"] > span:nth-last-of-type(2) {
     position: absolute;
     margin-left: 25px;
     margin-top: 60px;
-    top: 45%;
+    top: 40%;
     left: 2%;
   }
   .history .history-headline2 > h2 {
@@ -1197,20 +1198,23 @@ div[class*="section-title"] > span:nth-last-of-type(2) {
     left: 0%;
     top: 120%;
   }
+  .history .history-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .history .history-text > p {
-    font-size: 28px;
-    margin-top: 80px;
-    line-height: 45px;
-  }
-  .history .history-text > p:nth-child(1) {
-    margin-right: 420px;
-    margin-top: 130px;
-  }
-  .history .history-text > p:nth-child(2) {
-    margin-right: 25px;
-  }
-  .history .history-text > p:nth-child(3) {
-    margin-left: 420px;
+    font-size: 2.6rem;
+    margin: 4rem 2rem;
+    line-height: 3.5rem;
+    padding-top: 60px;
   }
   .works .github-info {
     display: -webkit-box;
