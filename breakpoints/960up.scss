@@ -543,6 +543,7 @@ div[class*="section-title"]{
         justify-content: space-around;
  
     & > li {
+        position: relative; /* 追加 */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -568,85 +569,130 @@ div[class*="section-title"]{
             box-sizing: border-box;
         }
 
-        .overlay {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0,0,0,0.5);
-            transition: opacity 200ms;
-            visibility: hidden;
-            opacity: 0;
+        // .overlay {
+        //     position: absolute;
+        //     top: 0;
+        //     bottom: 0;
+        //     left: 0;
+        //     right: 0;
+        //     background: rgba(0,0,0,0.5);
+        //     transition: opacity 200ms;
+        //     visibility: hidden;
+        //     opacity: 0;
 
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            &.light {
-            background: rgba(255,255,255,0.5);
-          }
-          &:target {
-            visibility: visible;
-            opacity: 1;
-          }
-        }
+        //     display:flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     &.light {
+        //     background: rgba(255,255,255,0.5);
+        //   }
+        //   &:target {
+        //     visibility: visible;
+        //     opacity: 1;
+        //   }
+        // }
         
-        .popup {
-            margin: 75px auto;
-            padding: 20px;
-            background: #fff;
-            border: 1px solid #666;
-            width: 100%;
-            height: 150%;
-            box-shadow: 0 0 50px rgba(0,0,0,0.5);
-            position: relative;
-          .light & {
-            border-color: #aaa;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.25);
-          }
-          h2 {
-            margin-top: 0;
-            color: #666;
-            font-size: 20px;
-            font-family: 'Roboto';
-          }
-          .close {
-            position: absolute;
-            width: 20px;
-            height: 8px;
-            top: 20px;
-            right: 20px;
-            opacity: 0.8;
-            transition: all 200ms;
-            font-size: 24px;
-            font-weight: bold;
-            text-decoration: none;
-            color: #666;
-            &:hover {
-              opacity: 1;
-            }
-          }
-          .content {
-            max-height: 400px;
-            overflow: visible;
-          }
-          p {
-            &:last-child {
-              margin: 0;
-              font-family: 'Roboto';
-              @media (min-width: 769px) and (max-width: 910px){
-                font-size: 10px;
-                line-height: 14px;
-                margin-top: 5px;
-            }
-            font-size: 13px;
-            line-height: 15px;
-            margin-top: 15px;
-            }
-          }
-        }
+        // .popup {
+        //     margin: 75px auto;
+        //     padding: 20px;
+        //     background: #fff;
+        //     border: 1px solid #666;
+        //     width: 100%;
+        //     height: 150%;
+        //     box-shadow: 0 0 50px rgba(0,0,0,0.5);
+        //     position: relative;
+        // .overlay {
+        //     position: fixed; /* absoluteからfixedに変更 */
+        //     top: 0;
+        //     bottom: 0;
+        //     left: 0;
+        //     right: 0;
+        //     background: rgba(0, 0, 0, 0.5);
+        //     transition: opacity 200ms;
+        //     visibility: hidden;
+        //     opacity: 0;
+        
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        // }
+        
+
         
         }
+    }
+    .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.5);
+        transition: opacity 200ms;
+        visibility: hidden;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000; /* 追加 */
+      }
+    
+    .popup {
+        // margin: 0 auto; /* 上下のマージンを0に変更 */
+        padding: 20px;
+        background: #fff;
+        border: 1px solid #666;
+        width: 80%; /* 100%から80%に変更 */
+        max-width: 500px; /* 最大幅を設定 */
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+        position: relative;
+        overflow: auto; /* 追加 */
+      .light & {
+        border-color: #aaa;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+      }
+      h2 {
+        margin-top: 0;
+        color: #666;
+        font-size: 20px;
+        font-family: 'Roboto';
+      }
+
+    button.close {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 20px;
+        right: 20px;
+        opacity: 0.8;
+        transition: all 200ms;
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #666;
+        background: none; // ボタンの背景を透明に
+        border: none; // ボタンの枠線を非表示に
+        cursor: pointer; // マウスカーソルをポインタに変更
+        outline: none; // ボタンのアウトラインを非表示に
+      }
+      .content {
+        max-height: 400px;
+        overflow: visible;
+      }
+      p {
+        &:last-child {
+          margin: 0;
+          font-family: 'Roboto';
+          @media (min-width: 769px) and (max-width: 910px){
+            font-size: 10px;
+            line-height: 14px;
+            margin-top: 5px;
+        }
+        font-size: 13px;
+        line-height: 15px;
+        margin-top: 15px;
+        }
+      }
     }
 
     .skillsets-wrapper {

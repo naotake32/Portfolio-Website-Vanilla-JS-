@@ -462,7 +462,7 @@ div[class*="section-title"] > span:nth-last-of-type(2) {
 }
 
 .works .overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -481,27 +481,20 @@ div[class*="section-title"] > span:nth-last-of-type(2) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.works .overlay.light {
-  background: rgba(255, 255, 255, 0.5);
-}
-
-.works .overlay:target {
-  visibility: visible;
-  opacity: 1;
+  z-index: 1000;
+  /* 追加 */
 }
 
 .works .popup {
-  margin: 75px auto;
   padding: 20px;
   background: #fff;
   border: 1px solid #666;
-  width: 85%;
-  height: 85%;
+  width: 80%;
+  max-width: 500px;
   -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   position: relative;
+  overflow: auto;
 }
 
 .light .works .popup {
@@ -523,10 +516,10 @@ div[class*="section-title"] > span:nth-last-of-type(2) {
   }
 }
 
-.works .popup .close {
+.works .popup button.close {
   position: absolute;
   width: 20px;
-  height: 8px;
+  height: 20px;
   top: 20px;
   right: 20px;
   opacity: 0.8;
@@ -536,10 +529,10 @@ div[class*="section-title"] > span:nth-last-of-type(2) {
   font-weight: bold;
   text-decoration: none;
   color: #666;
-}
-
-.works .popup .close:hover {
-  opacity: 1;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .works .popup .content {

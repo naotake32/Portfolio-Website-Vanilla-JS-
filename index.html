@@ -10,6 +10,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Noto+Sans+JP&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const closeButtons = document.querySelectorAll(".close");
+          closeButtons.forEach((button) => {
+            button.addEventListener("click", function () {
+              const overlay = button.closest(".overlay");
+              if (overlay) {
+                overlay.style.visibility = "hidden";
+                overlay.style.opacity = "0";
+              }
+            });
+          });
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+          const projectLinks = document.querySelectorAll("li a");
+          projectLinks.forEach((link) => {
+            link.addEventListener("click", function (event) {
+              event.preventDefault(); // ページ遷移をキャンセル
+              const targetId = link.getAttribute("href"); // クリックされた<a>タグのhref属性値を取得
+              const targetOverlay = document.querySelector(targetId); // href属性値に対応する.overlay要素を取得
+              if (targetOverlay) {
+                targetOverlay.style.visibility = "visible";
+                targetOverlay.style.opacity = "1";
+              }
+            });
+          });
+        });
+      </script>
 </head>
 <body>
     <div class="global-container">
@@ -34,7 +62,7 @@
                         <a href="#st-h">Career</a>
                     </li>
                     <li>
-                        <a href="#st-w">Works</a>
+                        <a href="#st-w">Projects</a>
                     </li>
                     <li>
                         <a href="#st-c">Contanct</a>
@@ -133,10 +161,30 @@
                             <a class="text" href="#popup1">Bukka Map(ongoing project)
                             </a>
                             <img class="photo" src="images/grocery.svg" alt="">
-                            <div id="popup1" class="overlay">
-                                <div class="popup">
+                        </li>
+                        <li>
+                            <a class="text" href="#popup2">Vocabulary App
+                            </a>
+                            <img class="photo" src="images/books.svg" alt="">
+
+                        </li>
+                        <li>
+                            <a class="text" href="#popup3">School Management App
+                            </a>
+                            <img class="photo" src="images/classroom.svg" alt="">
+
+                        </li>
+                        <li>
+                            <a class="text" href="#popup4">Whistle Blower System
+                            </a>
+                            <img class="photo" src="images/whistleblower.svg" alt="">
+
+                        </li>
+                    </ul>
+                                                <div id="popup1" class="overlay">
+                            <div class="popup">
                                     <h2>Bukka Map</h2>
-                                    <a class="close" href="#">&times;</a>
+                                    <button class="close">&times;</button>
                                     <div class="content">
                                         <p>A full stack map application using MERN stack, Mapbox and Typescript.You can refer to posts of price-information by looking through a map.</p>
                                         <p>Technical Specifications: HTML, CSS, Javascript, React.js, Node.js, MongoDB, Express, axios, Typescript, Mapbox</p>
@@ -145,33 +193,23 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <a class="text" href="#popup2">Vocabulary App
-                            </a>
-                            <img class="photo" src="images/books.svg" alt="">
                             <div id="popup2" class="overlay">
                                 <div class="popup">
                                     <h2>Vocabulary App</h2>
-                                    <a class="close" href="#">&times;</a>
+                                    <button class="close">&times;</button>
                                     <div class="content">
                                         <p>The simple vocabulary learning app with the CRUD operation and react-speech-kit.
                                             This is my first app with React.Js and I learned how to connect front end and back end by using axios and Express.</p>
-                                            <p>Technical Specifications: HTML, CSS, Javascript, React.js, Node.js, MySQL, Express, axios</p>
+                                            <p>Technical Specifications: HTML, CSS, Javascript, React.js, Node.js, MySQL, Express, axios,react-speech-kit</p>
                                             <p>GitHub link / </p>
                                             <a href="https://github.com/naotake32/the-simple-vocablary-application">https://github.com/naotake32/the-simple-vocablary-application</a>
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <a class="text" href="#popup3">School Management App
-                            </a>
-                            <img class="photo" src="images/classroom.svg" alt="">
                             <div id="popup3" class="overlay">
                                 <div class="popup">
                                     <h2>School Management App</h2>
-                                    <a class="close" href="#">&times;</a>
+                                    <button class="close">&times;</button>
                                     <div class="content">
                                         <p>A fantastic class administration system with booking classes, appointments with teachers, and so on.
                                             This is the project offered by our school for earning team development experience.
@@ -182,8 +220,20 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
+                            <div id="popup4" class="overlay">
+                                <div class="popup">
+                                    <h2>Whistleblower System</h2>
+                                    <button class="close">&times;</button>
+                                    <div class="content">
+                                        <p>
+                                            
+                                            An innovative corporate whistleblower platform that enables secure report submissions and real-time chat between reporters and system administrators. I was responsible for the back-end development, including administrator login and registration processes, as well as implementing the real-time chat functionality between reporters and administrators.</p>
+                                            <p>Technical Specifications: React.JS, CSS, Node.JS, Express, MongoDB,Socket.IO</p>
+                                            <p>GitHub link / </p>
+                                            <a href="https://github.com/naoto-tokoyoda/program-project-back-end">https://github.com/naoto-tokoyoda/program-project-back-end</a>
+                                    </div>
+                                </div>
+                            </div>
                     <div class="skillsets-wrapper">
                         <h2>Skillsets</h2>
                         <div class="skill-icons-wrapper">
@@ -228,7 +278,7 @@
                 <a href="#mst-t" >Top</a>
                 <a href="#mst-a">About me</a>
                 <a href="#mst-h">Career</a>
-                <a href="#mst-w">Works</a>
+                <a href="#mst-w">Projects</a>
                 <a href="#mst-c">Contanct</a>
             </div>
         </nav>
