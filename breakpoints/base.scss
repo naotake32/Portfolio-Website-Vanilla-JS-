@@ -24,7 +24,7 @@ body {
     & .history {
         height: auto;
         width: 100%;
-        margin-bottom: 15rem;
+        margin-bottom: 20rem;
     }
 
     & .works {
@@ -370,6 +370,38 @@ div[class*="section-title"]{
     }
 
     & .history-headline2 {
+        position: relative;
+        margin-top: 10%;
+        margin-left: 4%;
+        & > h2 {
+            font-family: Roboto;
+            font-size: 3.2rem;
+            margin-bottom: 1%;
+            text-align: center;
+        }
+
+        & > span {
+            display: inline-block;
+            z-index: 11;
+            &:nth-of-type(1) {
+                position: absolute;
+                background-color: black;
+                width: 1.8rem;
+                height: 1.8rem;
+                border-radius: 50%;
+                left: 1.5%;
+                top: 30%;
+            }
+            &:nth-of-type(2) {
+                position: absolute;
+                background-color: #c4c4c4;
+                height: 0.2rem;
+                width: 20rem;
+            }
+        }
+    }
+
+    & .history-headline3 {
         position: relative;
         margin-top: 10%;
         margin-left: 4%;

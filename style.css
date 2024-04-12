@@ -22,7 +22,7 @@ body {
 .container .history {
   height: auto;
   width: 100%;
-  margin-bottom: 15rem;
+  margin-bottom: 20rem;
 }
 
 .container .works {
@@ -358,6 +358,41 @@ div[class*="section-title"] > span:nth-last-of-type(2) {
 }
 
 .history .history-headline2 > span:nth-of-type(2) {
+  position: absolute;
+  background-color: #c4c4c4;
+  height: 0.2rem;
+  width: 20rem;
+}
+
+.history .history-headline3 {
+  position: relative;
+  margin-top: 10%;
+  margin-left: 4%;
+}
+
+.history .history-headline3 > h2 {
+  font-family: Roboto;
+  font-size: 3.2rem;
+  margin-bottom: 1%;
+  text-align: center;
+}
+
+.history .history-headline3 > span {
+  display: inline-block;
+  z-index: 11;
+}
+
+.history .history-headline3 > span:nth-of-type(1) {
+  position: absolute;
+  background-color: black;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  left: 1.5%;
+  top: 30%;
+}
+
+.history .history-headline3 > span:nth-of-type(2) {
   position: absolute;
   background-color: #c4c4c4;
   height: 0.2rem;
@@ -1141,16 +1176,14 @@ div[class*="section-title"] > span:nth-last-of-type(2) {
     font-size: 25px;
   }
   .history .history-headline1 {
-    position: absolute;
     margin-left: 25px;
     margin-top: 60px;
-    top: -5%;
-    left: 2%;
   }
   .history .history-headline1 > h2 {
     padding-left: 30px;
     font-family: Roboto;
     font-size: 40px;
+    text-align: left;
   }
   .history .history-headline1 > span {
     display: inline-block;
@@ -1170,22 +1203,42 @@ div[class*="section-title"] > span:nth-last-of-type(2) {
     width: 246px;
   }
   .history .history-headline2 {
-    position: absolute;
     margin-left: 25px;
     margin-top: 60px;
-    top: 39%;
-    left: 2%;
   }
   .history .history-headline2 > h2 {
     padding-left: 30px;
     font-family: Roboto;
     font-size: 40px;
+    text-align: left;
   }
   .history .history-headline2 > span {
     display: inline-block;
     z-index: 11;
   }
   .history .history-headline2 > span:nth-of-type(2) {
+    position: absolute;
+    background-color: #c4c4c4;
+    height: 2px;
+    width: 246px;
+    left: 0%;
+    top: 120%;
+  }
+  .history .history-headline3 {
+    margin-left: 25px;
+    margin-top: 60px;
+  }
+  .history .history-headline3 > h2 {
+    padding-left: 30px;
+    font-family: Roboto;
+    font-size: 40px;
+    text-align: left;
+  }
+  .history .history-headline3 > span {
+    display: inline-block;
+    z-index: 11;
+  }
+  .history .history-headline3 > span:nth-of-type(2) {
     position: absolute;
     background-color: #c4c4c4;
     height: 2px;
@@ -1209,7 +1262,6 @@ div[class*="section-title"] > span:nth-last-of-type(2) {
     font-size: 2.6rem;
     margin: 4rem 2rem;
     line-height: 3.5rem;
-    padding-top: 60px;
   }
   .works .github-info {
     display: -webkit-box;
